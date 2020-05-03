@@ -1,0 +1,16 @@
+theme = "hugo-theme-learn"
+baseURL = " https://rosineide.github.io/statisticalnote/"
+languageCode = "pt-br"
+title = "Notas de Estatística"
+relativeurls = true
+publishDir = "docs"
+
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[params]
+  # Change default color scheme with a variant one. Can be "red", "blue", "green".
+  themeVariant = "green"
+  
+  

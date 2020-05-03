@@ -1,0 +1,11 @@
+---
+weight: 1
+title: "Blogdown site with hugo theme learn"
+author: "Ming Chen"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```

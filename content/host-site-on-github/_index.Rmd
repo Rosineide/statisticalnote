@@ -1,0 +1,57 @@
+---
+weight: 2
+title: "Host site on GitHub"
+author: "Ming Chen"
+output: html_document
+---
+
+<style>
+pre code, pre, code {
+  white-space: pre !important;
+  overflow-x: scroll !important;
+  word-break: keep-all !important;
+  word-wrap: initial !important;
+}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#### Git repository
+
+Go into the project directory and run the command to make the project directory as a git repository.
+
+```{r eval=FALSE}
+git init .
+git add . 
+git commit 'init project'
+```
+
+#### Associate git repository with github remote repository
+
+```{r eval=FALSE}
+git remote add origin https://github.com/MingChen0919/blogdown-website-with-hugo-theme-learn.git
+```
+
+#### The **content/** and `.Rmd` files
+
+All `.Rmd` files should go to the **content/** directory. When running the `blogdown::server_site()` function, the `.Rmd` files within **content/** directory will get rendered and HTML files will be generated and copied to the **publish directory**.
+
+{{% notice note %}}
+By default, the **publish directory** is the **public/** directory. However, when hosting a website on GitHub, GitHub can only recognize website files within the **docs/** folder. We need to change the default **publish directory** from **public/** to **docs/**.
+{{% /notice %}}
+
+Add the following line to the **config.toml** file to change the default publish directory.
+
+```{r eval=FALSE}
+publishDir = "docs"
+```
+
+
+#### Publish site on GitHub
+
+After run the `blogdown::server_site()` function and push all commits to GitHub, go to the github repository, click **settings**, find the **GitHub Pages** section, and then select **master branch /docs folder** and save.
+
+
+

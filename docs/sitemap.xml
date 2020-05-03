@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/blogdown-a-site/</loc>
+  </url>
+  
+  <url>
+    <loc>/level-1-menu-1/level-2-menu-1/page-1/</loc>
+  </url>
+  
+  <url>
+    <loc>/level-1-menu-1/page-1/</loc>
+  </url>
+  
+  <url>
+    <loc>/level-1-menu-2/page-1/</loc>
+  </url>
+  
+  <url>
+    <loc>/host-site-on-github/</loc>
+  </url>
+  
+  <url>
+    <loc>/level-1-menu-1/level-2-menu-1/page-2/</loc>
+  </url>
+  
+  <url>
+    <loc>/level-1-menu-1/page-2/</loc>
+  </url>
+  
+  <url>
+    <loc>/level-1-menu-2/page-2/</loc>
+  </url>
+  
+  <url>
+    <loc>/edit-config-toml/</loc>
+  </url>
+  
+  <url>
+    <loc>/customize-logo/</loc>
+  </url>
+  
+  <url>
+    <loc>/page-organization/</loc>
+  </url>
+  
+  <url>
+    <loc>/level-1-menu-1/</loc>
+  </url>
+  
+  <url>
+    <loc>/level-1-menu-2/</loc>
+  </url>
+  
+  <url>
+    <loc>/post/2016-12-30-hello-markdown/</loc>
+    <lastmod>2016-12-30T21:49:57-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2016-12-30T21:49:57-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2016-05-05T21:48:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2016-05-05T21:48:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2015-07-23-r-rmarkdown/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/plot/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/r/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/r-markdown/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/regression/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2015-01-01-lorem-ipsum/</loc>
+    <lastmod>2015-01-01T13:09:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/level-1-menu-1/level-2-menu-1/</loc>
+  </url>
+  
+</urlset>
