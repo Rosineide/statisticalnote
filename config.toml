@@ -1,6 +1,8 @@
 theme = "hugo-theme-learn"
 baseURL = " https://rosineide.github.io/statisticalnote/"
-languageCode = "pt-br"
+languageCode = "pt"
+defaultContentLanguage = "pt"
+defaultContentLanguageInSubdir= true
 title = "Notas de Estatística"
 relativeurls = true
 publishDir = "docs"

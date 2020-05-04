@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Introdução a Estatística e Aplicações on Notas de Estatística</title>
+    <title>Introdução à Estatística e Aplicações on Notas de Estatística</title>
     <link>/</link>
-    <description>Recent content in Introdução a Estatística e Aplicações on Notas de Estatística</description>
+    <description>Recent content in Introdução à Estatística e Aplicações on Notas de Estatística</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>pt-br</language>
+    <language>pt</language>
     <lastBuildDate>Thu, 05 May 2016 21:48:51 -0700</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />

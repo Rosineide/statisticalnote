@@ -1,10 +1,10 @@
 [
 {
-	"uri": "/blogdown-a-site/",
+	"uri": "/introduction/",
 	"title": "Introdução",
 	"tags": [],
 	"description": "",
-	"content": "\rLAVINIA ALICE DA PAZ MONTEIRO\n"
+	"content": "\r-\r- - -\r-\r-\r-\r-\rA estatística consiste numa metodologia científica para obtenção, organização, redução, apresentação, análise e interpretação de dados oriundos das mais variadas áreas das ciências experimentais, cujo objetivo principal é auxiliar a tomada de decisão em situações de incerteza, veja por exemplo Morettin (2017) e Barbetta, Reis, e Bornia (2004). Informalmente, podemos definir a ciência estatística como um conjunto de técnicas utilizadas para estudar a condição de uma população usando informações obtidas a partir de dados observados.\nDe onde vêm os dados?\rDados são resultados de observações de algum fenômeno, podendo ser obtidos, para análise, a partir de observações espontâneas ou por meio de realização de experimentos planejados.\n\rDados oriundos de observações de fenômenos quaisquer:\r\robservar o desempenho natural de um novo equipamento.\r\r\rNesse caso, o desempenho natural do equipamento é a característica que se deseja estudar.\n\rDados oriundos de experimentos planejados:\n\robservar o desempenho de um novo equipamento, alterando de modo proposital alguma característica.\nNesse caso, o interesse é estudar o desempenho do equipamento levando em consideração a variação da característica alterada.\n\r\rA estatística, muitas vezes, é de grande utilidade quando o método científico é utilizado para testar teoria ou hipóteses em muitas áreas do conhecimento. Esse método pode ser resumido nos seguintes passos.\n\rUm problema é formulado em que, muitas vezes, uma hipótese precisa ser testada.\n\rPara solucionar o problema, deve-se coletar informações que sejam relevantes, para isso pode-se formular um experimento. Em muitas áreas do conhecimento o planejamento do experimento não é simples, ou até mesmo não é possível, e uma estratégia pode ser a observação de algum fenômeno de interesse.\r\rOs resultados do experimento podem ser utilizados para se obter conclusões, definitivas ou não.\n\rOs passo 2 e 3 podem ser repetidos quantas vezes forem necessárias.\n\r\rExample 1 Ao observar um equipamento que deveria estar operando, nota-se que este está parado.\n\rHipotese: falta de energia elétrica.\n\rFaz-se a observação para verificar a hipótese\n\rSe não é falta de energia, outras observações e testes serão requeridos.\n\rOs passos serão executados até que se tenha uma conclusão, que pode ser definitiva ou não.\n\r\rMuitas vezes, na aplicação do método científico a estatística é uma ferramenta indispensável, podendo ser requerida em todas as etapas.\nExample 2  Ao observar um equipamento em operação, desconfia-se que este não está operando como deveria.\n\rHipótese: o equipamento está desregulado, neste caso pode-se optar por realizar um processo de amostragem de produtos fabricados pela máquina, então faz-se necessário o planejamento de um experimento para coleta das amostras (área da estatística).\n\rApós o planejamento, o experimento é realizado e ferramentas da estatística podem ser aplicadas para obter alguma conclusão.\n\rCaso os resultados sejam inconclusivos, novos experimentos poderão ser realizados.\n\rOs passos podem ser executados até que se tenha uma conclusão.\n\r\rBarbetta, Pedro Alberto, Marcelo Menezes Reis, e Antonio Cezar Bornia. 2004. Estatı́stica: para cursos de engenharia e informática. Vol. 3. Atlas São Paulo.\n\rMorettin, WILTON OLIVEIRA, Pedro Alberto e BUSSAB. 2017. Estatı́stica básica. Editora Saraiva.\n\r\r\r"
 },
 {
 	"uri": "/level-1-menu-1/level-2-menu-1/page-1/",
@@ -74,7 +74,7 @@
 	"title": "Page organization",
 	"tags": [],
 	"description": "",
-	"content": "\rPage order\rUse weight within .Rmd file to order pages. See the example:\n\r_index.Rmd for Blogdwon a site page\r\r---\rweight: 1\rtitle: \u0026quot;Blogdown a site\u0026quot;\rauthor: \u0026quot;Ming Chen\u0026quot;\routput: html_document\r---\r\r_index.Rmd for Host site on GitHub page\r\r---\rweight: 2\rtitle: \u0026quot;Host site on GitHub\u0026quot;\rauthor: \u0026quot;Ming Chen\u0026quot;\routput: html_document\r---\r\r_index.Rmd for Edit config.toml page\r\r---\rweight: 3\rtitle: \u0026quot;Edit config.toml\u0026quot;\rauthor: \u0026quot;Ming Chen\u0026quot;\routput: html_document\r---\r\rUse Level 1 Menu 1 and Level 1 Menu 2 as a page organization template.\r\r├── _index.Rmd\r├── _index.html\r├── level-2-menu-1\r│ ├── _index.Rmd\r│ ├── _index.html\r│ ├── page-1.Rmd\r│ ├── page-1.html\r│ ├── page-2.Rmd\r│ └── page-2.html\r├── page-1.Rmd\r├── page-1.html\r├── page-2.Rmd\r└── page-2.html\r==\u0026gt; level-1-menu-1/_index.Rmd \u0026lt;==\r---\rweight: 6\rtitle: \u0026quot;Level 1 Menu 1\u0026quot;\rauthor: \u0026quot;Ming Chen\u0026quot;\routput: html_document\r---\r==\u0026gt; level-1-menu-1/page-1.Rmd \u0026lt;==\r---\rweight: 1\rtitle: \u0026quot;Page 1\u0026quot;\rauthor: \u0026quot;Ming Chen\u0026quot;\routput: html_document\r---\r==\u0026gt; level-1-menu-1/page-2.Rmd \u0026lt;==\r---\rweight: 2\rtitle: \u0026quot;Page 2\u0026quot;\rauthor: \u0026quot;Ming Chen\u0026quot;\routput: html_document\r---\r==\u0026gt; level-1-menu-1/level-2-menu-1/_index.Rmd \u0026lt;==\r---\rtitle: \u0026quot;Level 2 Menu 1\u0026quot;\rauthor: \u0026quot;Ming Chen\u0026quot;\routput: html_document\r---\r==\u0026gt; level-1-menu-1/level-2-menu-1/page-1.Rmd \u0026lt;==\r---\rweight: 1\rtitle: \u0026quot;Page 1\u0026quot;\rauthor: \u0026quot;Ming Chen\u0026quot;\routput: html_document\r---\r==\u0026gt; level-1-menu-1/level-2-menu-1/page-2.Rmd \u0026lt;==\r---\rweight: 2\rtitle: \u0026quot;Page 2\u0026quot;\rauthor: \u0026quot;Ming Chen\u0026quot;\routput: html_document\r--- \r\r"
+	"content": "\r\n\r\n\r\n\r\n"
 },
 {
 	"uri": "/level-1-menu-1/",
@@ -113,10 +113,10 @@
 },
 {
 	"uri": "/",
-	"title": "Introdução a Estatística e Aplicações",
+	"title": "Introdução à Estatística e Aplicações",
 	"tags": [],
 	"description": "",
-	"content": "\rIntrodução a Estatística e Suas Aplicações\rDizer o que é o documento, o que na pagina etc\n\r"
+	"content": "\rIntrodução à Estatística e Suas Aplicações\rDizer o que é o documento, o que na pagina etc\n\r"
 },
 {
 	"uri": "/categories/",
