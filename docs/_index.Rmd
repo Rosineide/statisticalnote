@@ -13,4 +13,4 @@ chapter: true
 
 # Introdução à Estatística e Suas Aplicações
 
-Dizer o que é o documento, o que na pagina etc
+Notas conceituais sobre estatística e suas aplicações.
