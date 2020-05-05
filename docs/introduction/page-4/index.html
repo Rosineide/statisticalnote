@@ -10,22 +10,22 @@
     <link rel="shortcut icon" href="../../images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="../../images/favicon.png" type="image/x-icon" />
 
-    <title>Análise Estatística :: Notas de Estatística</title>
+    <title>Resumo da Análise Estatística :: Notas de Estatística</title>
     
     
-    <link href="../../css/nucleus.css?1588696937" rel="stylesheet">
-    <link href="../../css/font-awesome.min.css?1588696937" rel="stylesheet">
-    <link href="../../css/hybrid.css?1588696937" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1588696937" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1588696937" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1588696937" rel="stylesheet">
-    <link href="../../css/theme.css?1588696937" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1588696937" rel="stylesheet">
+    <link href="../../css/nucleus.css?1588707840" rel="stylesheet">
+    <link href="../../css/font-awesome.min.css?1588707840" rel="stylesheet">
+    <link href="../../css/hybrid.css?1588707840" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1588707840" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1588707840" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1588707840" rel="stylesheet">
+    <link href="../../css/theme.css?1588707840" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1588707840" rel="stylesheet">
     
-      <link href="../../css/theme-green.css?1588696937" rel="stylesheet">
+      <link href="../../css/theme-green.css?1588707840" rel="stylesheet">
     
 
-    <script src="../../js/jquery-2.x.min.js?1588696937"></script>
+    <script src="../../js/jquery-2.x.min.js?1588707840"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1588696937"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1588696937"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1588707840"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1588707840"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1588696937"></script>
+<script type="text/javascript" src="../../js/search.js?1588707840"></script>
 
     
   </div>
@@ -159,9 +159,9 @@
  
   
     
-      <li data-nav-id="/introduction/page-4/" title="Análise Estatística" class="dd-item active">
+      <li data-nav-id="/introduction/page-4/" title="Resumo da Análise Estatística" class="dd-item active">
         <a href="../../introduction/page-4/">
-        Análise Estatística
+        Resumo da Análise Estatística
         
         </a>
     </li>
@@ -299,7 +299,7 @@
             
           
           
-            <a href='../../'>Introdução à Estatística e Aplicações</a> > <a href='../../introduction/'>1 Introdução</a> > Análise Estatística
+            <a href='../../'>Introdução à Estatística e Aplicações</a> > <a href='../../introduction/'>1 Introdução</a> > Resumo da Análise Estatística
           
          
           
@@ -323,17 +323,40 @@
         
         <div id="body-inner">
           
-            <h1>Análise Estatística</h1>
+            <h1>Resumo da Análise Estatística</h1>
           
 
         
 
 
 
+<script src="../../rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="../../rmarkdown-libs/viz/viz.js"></script>
+<link href="../../rmarkdown-libs/DiagrammeR-styles/styles.css" rel="stylesheet" />
+<script src="../../rmarkdown-libs/grViz-binding/grViz.js"></script>
 
 
-<p>Após a definição do problema, em que a população e a variável de interesse são definidas, em uma análise estatística, pode-se pensar nas etapas descritas na Figura <a href="../../introduction/page-4_files/diagrama.pdf">diagrama</a>
-, que mostra de forma esquemática e resumida as possíveis etapas de uma análise estatística, quando já está definida qual é a população de interesse. Note que existem casos em que apenas uma análise descritiva (exploratória) dos dados é suficiente para tirar conclusões a respeito da população de interesse. No entanto, se a população é maior do que o conjunto de unidades amostrais utilizadas para a obtenção dos dados, sob determinadas condições, podemos fazer uso das teorias de probabilidades para fazer inferência sobre as características desejadas da população (os parâmetros de interesse).</p>
+<p>Após a definição do problema, em que a população e a variável de interesse são definidas, em uma análise estatística, pode-se pensar nas etapas descritas na Figura <a href="#fig:diagrama">1</a>, que mostra de forma esquemática e resumida as possíveis etapas de uma análise estatística, quando já está definida qual é a população de interesse. Note que existem casos em que apenas uma análise descritiva (exploratória) dos dados é suficiente para tirar conclusões a respeito da população de interesse. No entanto, se a população é maior do que o conjunto de unidades amostrais utilizadas para a obtenção dos dados, sob determinadas condições, podemos fazer uso das teorias de probabilidades para fazer inferência sobre as características desejadas da população (os parâmetros de interesse).</p>
+<center>
+<div class="figure"><span id="fig:diagrama"></span>
+<div id="htmlwidget-1" style="width:672px;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"diagram":"digraph flowchart{\n    node [fontname = Helvetica, shape = rectangle]        \n      tab1 [label = \"Censo\"]\n      tab2 [label = \"População\"]\n      tab3 [label = \"Amostragem\"]\n      tab4 [label = \"Amostra observada (dados)\"]\n      tab5 [label = \"Inferencia Estatística (uso de probabilidades)\"]\n      tab6 [label = \"Conclusões sobre a população\"]\n      tab7 [label = \"Informações extraídas dos dados\"]\n      tab8 [label = \"Problema\"]\n      tab9 [label = \"Observações (dados)\"]\n         \n\n      # edge definitions with the node \n      tab8 -> tab2\n      tab2 -> tab3 -> tab4 -> tab7 -> tab5-> tab6;\n      tab2 -> tab1 -> tab9 -> tab7 -> tab6\n      }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 1: Análise estatística a partir de amostra ou de população.
+</p>
+</div>
+</center>
+<p>Em uma análise estatística, independentemente de que seja utilizada uma amostra ou a população inteira para obter o conjunto de observações, uma analise exploratória dos dados fazendo uso de ferramentas da  é sempre requerida. Embora essa analise inicial ocorra de forma semelhante para população ou amostra, aqui são utilizadas notações diferentes para indicar se as ferramentas estão sendo aplicadas a dados oriundos de amostras ou de populações.</p>
+<p>De um modo geral, todas as etapas requeridas para uma análise completa deve ser trabalhada com muito cuidado a fim de que sejam utilizadas as ferramentas adequadas para solução do problema que se deseja resolver, pois a adequação das ferramentas estatísticas apo problema irá conduzir a resultados mais confiáveis, que podem ser usados com mais confiança na solução do problema que se deseja resolver.</p>
+<p>O diagrama apresentado na Figura <a href="#fig:diagrama">1</a> foi obtido utilando o pacote <span class="citation">Iannone (<a href="#ref-DiagrammeR" role="doc-biblioref">2020</a>)</span>.</p>
+<div id="reference" class="section level2 unnumbered">
+<h2>Reference</h2>
+<div id="refs" class="references">
+<div id="ref-DiagrammeR">
+<p>Iannone, Richard. 2020. <em>DiagrammeR: Graph/Network Visualization</em>. <a href="https://CRAN.R-project.org/package=DiagrammeR">https://CRAN.R-project.org/package=DiagrammeR</a>.</p>
+</div>
+</div>
+</div>
 
 
 <footer class=" footline" >
@@ -522,20 +545,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1588696937"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1588696937"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1588696937"></script>
-    <script src="../../js/jquery.sticky.js?1588696937"></script>
-    <script src="../../js/featherlight.min.js?1588696937"></script>
-    <script src="../../js/html5shiv-printshiv.min.js?1588696937"></script>
-    <script src="../../js/highlight.pack.js?1588696937"></script>
+    <script src="../../js/clipboard.min.js?1588707840"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1588707840"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1588707840"></script>
+    <script src="../../js/jquery.sticky.js?1588707840"></script>
+    <script src="../../js/featherlight.min.js?1588707840"></script>
+    <script src="../../js/html5shiv-printshiv.min.js?1588707840"></script>
+    <script src="../../js/highlight.pack.js?1588707840"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom.71422.js?1588696937"></script>
-    <script src="../../js/learn.js?1588696937"></script>
-    <script src="../../js/hugo-learn.js?1588696937"></script>
+    <script src="../../js/modernizr.custom.71422.js?1588707840"></script>
+    <script src="../../js/learn.js?1588707840"></script>
+    <script src="../../js/hugo-learn.js?1588707840"></script>
 
-    <link href="../../mermaid/mermaid.css?1588696937" type="text/css" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1588696937"></script>
+    <link href="../../mermaid/mermaid.css?1588707840" type="text/css" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1588707840"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -1,20 +1,66 @@
 ---
 weight: 4
-title: "Análise Estatística"
-author: "Rosineide da Paz"
-date: "05/05/2020"
-output: html_document
+title: "Resumo da Análise Estatística"
+output:
+  bookdown::html_document2: default
+  bookdown::pdf_document2: default
+link-citations: yes
+number_sections: yes
+bibliography: reference.bib
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Após a definição do problema, em que a população e a variável de interesse são definidas, em uma análise estatística, pode-se pensar nas etapas descritas na Figura [diagrama](/introduction/page-4_files/diagrama.pdf)
-, que mostra de forma esquemática e resumida as possíveis etapas de uma análise estatística, quando já está definida qual é a população de interesse. Note que existem casos em que apenas uma análise descritiva (exploratória) dos dados é suficiente para tirar conclusões a respeito da população de interesse. No entanto, se a população é maior do que o conjunto de unidades amostrais utilizadas para a obtenção dos dados, sob determinadas condições, podemos fazer uso das teorias de probabilidades para fazer inferência sobre as características desejadas da população (os parâmetros de interesse).
+Após a definição do problema, em que a população e a variável de interesse são definidas, em uma análise estatística, pode-se pensar nas etapas descritas na Figura \@ref(fig:diagrama), que mostra de forma esquemática e resumida as possíveis etapas de uma análise estatística, quando já está definida qual é a população de interesse. Note que existem casos em que apenas uma análise descritiva (exploratória) dos dados é suficiente para tirar conclusões a respeito da população de interesse. No entanto, se a população é maior do que o conjunto de unidades amostrais utilizadas para a obtenção dos dados, sob determinadas condições, podemos fazer uso das teorias de probabilidades para fazer inferência sobre as características desejadas da população (os parâmetros de interesse).
+
+<center> 
+```{r diagrama, echo=FALSE,fig.cap = "Análise estatística  a partir de amostra ou de população."}
+library(DiagrammeR)
+grViz("digraph flowchart{
+    node [fontname = Helvetica, shape = rectangle]        
+      tab1 [label = '@@1']
+      tab2 [label = '@@2']
+      tab3 [label = '@@3']
+      tab4 [label = '@@4']
+      tab5 [label = '@@5']
+      tab6 [label = '@@6']
+      tab7 [label = '@@7']
+      tab8 [label = '@@8']
+      tab9 [label = '@@9']
+         
+
+      # edge definitions with the node 
+      tab8 -> tab2
+      tab2 -> tab3 -> tab4 -> tab7 -> tab5-> tab6;
+      tab2 -> tab1 -> tab9 -> tab7 -> tab6
+      }
+
+      [1]: 'Censo'
+      [2]: 'População'
+      [3]: 'Amostragem'
+      [4]: 'Amostra observada (dados)'
+      [5]: 'Inferencia Estatística (uso de probabilidades)' 
+      [6]: 'Conclusões sobre a população' 
+      [7]: 'Informações extraídas dos dados' 
+      [8]: 'Problema' 
+      [9]: 'Observações (dados)' 
+     
+            ")
+```
+
+</center> 
+
+Em uma análise estatística, independentemente de que seja utilizada uma amostra ou a população inteira para obter o conjunto de observações,  uma analise exploratória dos dados fazendo uso de ferramentas da \textbf{estatística descritiva} é sempre requerida. Embora essa analise inicial ocorra de forma semelhante para população ou amostra, aqui são utilizadas notações diferentes para indicar se as ferramentas estão sendo aplicadas a dados oriundos de amostras ou de populações.
+
+
+De um modo geral, todas as etapas requeridas para uma análise completa deve ser trabalhada com muito cuidado a fim de que sejam utilizadas as ferramentas adequadas para solução do problema que se deseja resolver, pois a adequação das ferramentas estatísticas apo problema irá conduzir a resultados mais confiáveis, que podem ser usados com mais confiança na solução do problema que se deseja resolver.
 
 
 
 
 
+O diagrama apresentado na Figura \@ref(fig:diagrama) foi obtido utilando o pacote @DiagrammeR.
 
+## Reference
