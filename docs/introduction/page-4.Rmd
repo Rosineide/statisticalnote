@@ -16,6 +16,9 @@ knitr::opts_chunk$set(echo = TRUE)
 Após a definição do problema, em que a população e a variável de interesse são definidas, em uma análise estatística, pode-se pensar nas etapas descritas na Figura \@ref(fig:diagrama), que mostra de forma esquemática e resumida as possíveis etapas de uma análise estatística, quando já está definida qual é a população de interesse. Note que existem casos em que apenas uma análise descritiva (exploratória) dos dados é suficiente para tirar conclusões a respeito da população de interesse. No entanto, se a população é maior do que o conjunto de unidades amostrais utilizadas para a obtenção dos dados, sob determinadas condições, podemos fazer uso das teorias de probabilidades para fazer inferência sobre as características desejadas da população (os parâmetros de interesse).
 
 <center> 
+
+
+
 ```{r diagrama, echo=FALSE,fig.cap = "Análise estatística  a partir de amostra ou de população."}
 library(DiagrammeR)
 grViz("digraph flowchart{
@@ -40,7 +43,7 @@ grViz("digraph flowchart{
       [2]: 'População'
       [3]: 'Amostragem'
       [4]: 'Amostra observada (dados)'
-      [5]: 'Inferencia Estatística (uso de probabilidades)' 
+      [5]: 'Inferência Estatística (uso de probabilidades)' 
       [6]: 'Conclusões sobre a população' 
       [7]: 'Informações extraídas dos dados' 
       [8]: 'Exploração dos dados' 
