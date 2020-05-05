@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Introdução à Estatística e Aplicações on Notas de Estatística</title>
-    <link>/</link>
-    <description>Recent content in Introdução à Estatística e Aplicações on Notas de Estatística</description>
+    <title>Regressão e Correlação on Notas de Estatística</title>
+    <link>/regression/</link>
+    <description>Recent content in Regressão e Correlação on Notas de Estatística</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt</language>
-    <lastBuildDate>Thu, 05 May 2016 21:48:51 -0700</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/regression/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -27,15 +26,6 @@
       
       <guid>/regression/page-2/</guid>
       <description>Page 2 under level 1 menu 2.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
-      
-      <guid>/about/</guid>
-      <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
     </item>
     
   </channel>

@@ -1,108 +1,31 @@
 [
 {
 	"uri": "/introduction/",
-	"title": "",
+	"title": "Introdução",
 	"tags": [],
 	"description": "",
-	"content": "\r-\r- - -\r-\r-\r-\r-\rIntrodução\rA estatística consiste numa metodologia científica para obtenção, organização, redução, apresentação, análise e interpretação de dados oriundos das mais variadas áreas das ciências experimentais, cujo objetivo principal é auxiliar a tomada de decisão em situações de incerteza, veja por exemplo Morettin (2017) e Barbetta, Reis, and Bornia (2004). Informalmente, podemos definir a ciência estatística como um conjunto de técnicas utilizadas para estudar a condição de uma população usando informações obtidas a partir de dados observados.\n\rDe onde vêm os dados?\r\rDados são resultados de observações de algum fenômeno, podendo ser obtidos, para análise, a partir de observações espontâneas ou por meio de realização de experimentos planejados.\n\rDados oriundos de observações de fenômenos quaisquer:\r\robservar o desempenho natural de um novo equipamento.\r\r\rNesse caso, o desempenho natural do equipamento é a característica que se deseja estudar.\n\rDados oriundos de experimentos planejados:\n\robservar o desempenho de um novo equipamento, alterando de modo proposital alguma característica.\nNesse caso, o interesse é estudar o desempenho do equipamento levando em consideração a variação da característica alterada.\n\r\rA estatística, muitas vezes, é de grande utilidade quando o método científico é utilizado para testar teoria ou hipóteses em muitas áreas do conhecimento. Esse método pode ser resumido nos seguintes passos.\n\rUm problema é formulado em que, muitas vezes, uma hipótese precisa ser testada.\n\rPara solucionar o problema, deve-se coletar informações que sejam relevantes, para isso pode-se formular um experimento. Em muitas áreas do conhecimento o planejamento do experimento não é simples, ou até mesmo não é possível, e uma estratégia pode ser a observação de algum fenômeno de interesse.\r\rOs resultados do experimento podem ser utilizados para se obter conclusões, definitivas ou não.\n\rOs passo 2 e 3 podem ser repetidos quantas vezes forem necessárias.\n\r\rExample 1 Ao observar um equipamento que deveria estar operando, nota-se que este está parado.\n\rHipotese: falta de energia elétrica.\n\rFaz-se a observação para verificar a hipótese\n\rSe não é falta de energia, outras observações e testes serão requeridos.\n\rOs passos serão executados até que se tenha uma conclusão, que pode ser definitiva ou não.\n\r\rMuitas vezes, na aplicação do método científico a estatística é uma ferramenta indispensável, podendo ser requerida em todas as etapas.\nExample 2  Ao observar um equipamento em operação, desconfia-se que este não está operando como deveria.\n\rHipótese: o equipamento está desregulado, neste caso pode-se optar por realizar um processo de amostragem de produtos fabricados pela máquina, então faz-se necessário o planejamento de um experimento para coleta das amostras (área da estatística).\n\rApós o planejamento, o experimento é realizado e ferramentas da estatística podem ser aplicadas para obter alguma conclusão.\n\rCaso os resultados sejam inconclusivos, novos experimentos poderão ser realizados.\n\rOs passos podem ser executados até que se tenha uma conclusão.\n\r\rPlanejamento do Estudo\rÉ nessa esta que deve ser definida a população de interesse, ou seja deve ser feita a formulação do problema definido sua abrangencia.\nEm uma análise estatística, a população pode ser pensada como o conjunto que contém todos os indivíduos, fenômenos ou resultados que se pretende investigar,sendo bem delimitado por pelo menos uma característica compartilhada por todos os seus elementos.\nApós defini-la, ainda deve ser decidido se é possível ou viável obter os dados a partir de toda a população de interesse ou de parte dela. Muitas vezes a análise é feita a partir de amostras desta população.\nDefinition 1 Amostra é qualquer subconjunto da população que se deseja investigar.\r\rBarbetta, Pedro Alberto, Marcelo Menezes Reis, and Antonio Cezar Bornia. 2004. Estatı́stica: Para Cursos de Engenharia E Informática. Vol. 3. Atlas São Paulo.\n\rMorettin, WILTON OLIVEIRA, Pedro Alberto e BUSSAB. 2017. Estatı́stica Básica. Editora Saraiva.\n\r\r\r\r"
+	"content": " - - - - - - - - Introdução A estatística consiste numa metodologia científica para obtenção, organização, redução, apresentação, análise e interpretação de dados oriundos das mais variadas áreas das ciências experimentais, cujo objetivo principal é auxiliar a tomada de decisão em situações de incerteza, veja por exemplo Morettin (2017) e Barbetta, Reis, and Bornia (2004). Informalmente, podemos definir a ciência estatística como um conjunto de técnicas utilizadas para estudar a condição de uma população usando informações obtidas a partir de dados observados.\n De onde vêm os dados?  Dados são resultados de observações de algum fenômeno, podendo ser obtidos, para análise, a partir de observações espontâneas ou por meio de realização de experimentos planejados.\n Dados oriundos de observações de fenômenos quaisquer:  observar o desempenho natural de um novo equipamento.   Nesse caso, o desempenho natural do equipamento é a característica que se deseja estudar.\n Dados oriundos de experimentos planejados: observar o desempenho de um novo equipamento, alterando de modo proposital alguma característica.\nNesse caso, o interesse é estudar o desempenho do equipamento levando em consideração a variação da característica alterada.\n  A estatística, muitas vezes, é de grande utilidade quando o método científico é utilizado para testar teoria ou hipóteses em muitas áreas do conhecimento. Esse método pode ser resumido nos seguintes passos.\n Um problema é formulado em que, muitas vezes, uma hipótese precisa ser testada.\n Para solucionar o problema, deve-se coletar informações que sejam relevantes, para isso pode-se formular um experimento. Em muitas áreas do conhecimento o planejamento do experimento não é simples, ou até mesmo não é possível, e uma estratégia pode ser a observação de algum fenômeno de interesse.  Os resultados do experimento podem ser utilizados para se obter conclusões, definitivas ou não. Os passo 2 e 3 podem ser repetidos quantas vezes forem necessárias.\n  Example 1 Ao observar um equipamento que deveria estar operando, nota-se que este está parado.\n Hipotese: falta de energia elétrica.\n Faz-se a observação para verificar a hipótese\n Se não é falta de energia, outras observações e testes serão requeridos.\n Os passos serão executados até que se tenha uma conclusão, que pode ser definitiva ou não.   Muitas vezes, na aplicação do método científico a estatística é uma ferramenta indispensável, podendo ser requerida em todas as etapas.\nExample 2  Ao observar um equipamento em operação, desconfia-se que este não está operando como deveria.\n Hipótese: o equipamento está desregulado, neste caso pode-se optar por realizar um processo de amostragem de produtos fabricados pela máquina, então faz-se necessário o planejamento de um experimento para coleta das amostras (área da estatística).\n Após o planejamento, o experimento é realizado e ferramentas da estatística podem ser aplicadas para obter alguma conclusão.\n Caso os resultados sejam inconclusivos, novos experimentos poderão ser realizados.\n Os passos podem ser executados até que se tenha uma conclusão.   Planejamento do Estudo É nessa esta que deve ser definida a população de interesse, ou seja deve ser feita a formulação do problema definido sua abrangencia.\nEm uma análise estatística, a população pode ser pensada como o conjunto que contém todos os indivíduos, fenômenos ou resultados que se pretende investigar,sendo bem delimitado por pelo menos uma característica compartilhada por todos os seus elementos.\nApós defini-la, ainda deve ser decidido se é possível ou viável obter os dados a partir de toda a população de interesse ou de parte dela. Muitas vezes a análise é feita a partir de amostras desta população.\nDefinition 1 Amostra é qualquer subconjunto da população que se deseja investigar.  Barbetta, Pedro Alberto, Marcelo Menezes Reis, and Antonio Cezar Bornia. 2004. Estatı'stica: Para Cursos de Engenharia E Informática. Vol. 3. Atlas São Paulo.\n Morettin, WILTON OLIVEIRA, Pedro Alberto e BUSSAB. 2017. Estatı'stica Básica. Editora Saraiva.\n    "
 },
 {
-	"uri": "/level-1-menu-1/level-2-menu-1/page-1/",
-	"title": "Page 1",
+	"uri": "/regression/page-1/",
+	"title": "Regressão Linear Simples",
 	"tags": [],
 	"description": "",
-	"content": "\rPage 1 under level 2 menu 1.\n"
+	"content": " Page 1 under level 1 menu 2.\n"
 },
 {
-	"uri": "/level-1-menu-1/page-1/",
-	"title": "Page 1",
+	"uri": "/regression/page-2/",
+	"title": "Regressão Linear Múltipla",
 	"tags": [],
 	"description": "",
-	"content": "\rPage 1 under level 1 menu 1.\n"
+	"content": " Page 2 under level 1 menu 2.\n"
 },
 {
-	"uri": "/level-1-menu-2/page-1/",
-	"title": "Page 1",
+	"uri": "/regression/",
+	"title": "Regressão e Correlação",
 	"tags": [],
 	"description": "",
-	"content": "\rPage 1 under level 1 menu 2.\n"
-},
-{
-	"uri": "/host-site-on-github/",
-	"title": "Host site on GitHub",
-	"tags": [],
-	"description": "",
-	"content": "\r\rpre code, pre, code {\rwhite-space: pre !important;\roverflow-x: scroll !important;\rword-break: keep-all !important;\rword-wrap: initial !important;\r}\r\rGit repository\rGo into the project directory and run the command to make the project directory as a git repository.\ngit init .\rgit add . git commit \u0026#39;init project\u0026#39;\r\rAssociate git repository with github remote repository\rgit remote add origin https://github.com/MingChen0919/blogdown-website-with-hugo-theme-learn.git\r\rThe content/ and .Rmd files\rAll .Rmd files should go to the content/ directory. When running the blogdown::server_site() function, the .Rmd files within content/ directory will get rendered and HTML files will be generated and copied to the publish directory.\nBy default, the publish directory is the public/ directory. However, when hosting a website on GitHub, GitHub can only recognize website files within the docs/ folder. We need to change the default publish directory from public/ to docs/. \rAdd the following line to the config.toml file to change the default publish directory.\npublishDir = \u0026quot;docs\u0026quot;\r\rPublish site on GitHub\rAfter run the blogdown::server_site() function and push all commits to GitHub, go to the github repository, click settings, find the GitHub Pages section, and then select master branch /docs folder and save.\n\r"
-},
-{
-	"uri": "/level-1-menu-1/level-2-menu-1/page-2/",
-	"title": "Page 2",
-	"tags": [],
-	"description": "",
-	"content": "\rPage 2 under level 2 menu 1.\n"
-},
-{
-	"uri": "/level-1-menu-1/page-2/",
-	"title": "Page 2",
-	"tags": [],
-	"description": "",
-	"content": "\rPage 2 under level 1 menu 1.\n"
-},
-{
-	"uri": "/level-1-menu-2/page-2/",
-	"title": "Page 2",
-	"tags": [],
-	"description": "",
-	"content": "\rPage 2 under level 1 menu 2.\n"
-},
-{
-	"uri": "/edit-config-toml/",
-	"title": "Edit config.toml",
-	"tags": [],
-	"description": "",
-	"content": "\rAdd the line relativeurls = true to the config.toml file. This is required. Otherwise, the links to css files will be broken when the site is hosted on github. \rtheme = \u0026quot;hugo-theme-learn\u0026quot;\rbaseURL = \u0026quot;http://example.org/\u0026quot;\rlanguageCode = \u0026quot;en-us\u0026quot;\rtitle = \u0026quot;My New Hugo Site\u0026quot;\rrelativeurls = true\rAdding the following lines to the config.toml file will make the site searchable.\n[outputs]\rhome = [ \u0026quot;HTML\u0026quot;, \u0026quot;RSS\u0026quot;, \u0026quot;JSON\u0026quot;]\rChange site colors\n[params]\r# Change default color scheme with a variant one. Can be \u0026quot;red\u0026quot;, \u0026quot;blue\u0026quot;, \u0026quot;green\u0026quot;.\rthemeVariant = \u0026quot;blue\u0026quot;\r"
-},
-{
-	"uri": "/customize-logo/",
-	"title": "Customize logo",
-	"tags": [],
-	"description": "",
-	"content": "\r\rpre code, pre, code {\rwhite-space: pre !important;\roverflow-x: scroll !important;\rword-break: keep-all !important;\rword-wrap: initial !important;\r}\r\rPut your logo image into directory content/images. Then replace the content of themes/hugo-theme-learn/layouts/partials/logo.html with the content below:\n#\u0026lt;a id=\u0026quot;logo\u0026quot; href=\u0026quot;https://mingchen0919.github.io/blogdown-website-with-hugo-theme-learn/\u0026quot;\u0026gt;\r# \u0026lt;img src=\u0026quot;/images/mingchen-github-logo.png\u0026quot;\u0026gt;\r#\u0026lt;/a\u0026gt;\r"
-},
-{
-	"uri": "/page-organization/",
-	"title": "Page organization",
-	"tags": [],
-	"description": "",
-	"content": "\r\n\r\n\r\n\r\n"
-},
-{
-	"uri": "/level-1-menu-1/",
-	"title": "Level 1 Menu 1",
-	"tags": [],
-	"description": "",
-	"content": "\rThis is the level 1 menu 1 front page.\n"
-},
-{
-	"uri": "/level-1-menu-2/",
-	"title": "Level 1 Menu 2",
-	"tags": [],
-	"description": "",
-	"content": "\rThis is the level 1 menu 2 front page.\n"
-},
-{
-	"uri": "/post/2016-12-30-hello-markdown/",
-	"title": "A Plain Markdown Post",
-	"tags": [],
-	"description": "",
-	"content": "This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:\n You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday\u0026rsquo;s Markdown and Pandoc\u0026rsquo;s Markdown. For example, you can write a task list with Blackfriday but not with Pandoc:\n Write an R package. Write a book. \u0026hellip; Profit!  Similarly, Blackfriday does not support LaTeX math and Pandoc does. I have added the MathJax support to this theme (hugo-lithium) but there is a caveat for plain Markdown posts: you have to include math expressions in a pair of backticks (inline: `$ $`; display style: `$$ $$`), e.g., $S_n = \\sum_{i=1}^n X_i$.^[This is because we have to protect the math expressions from being interpreted as Markdown. You may not need the backticks if your math expression does not contain any special Markdown syntax such as underscores or asterisks, but it is always a safer choice to use backticks. When you happen to have a pair of literal dollar signs inside the same element, you can escape one dollar sign, e.g., \\$50 and $100 renders \u0026ldquo;$50 and $100\u0026rdquo;.] For R Markdown posts, you do not need the backticks, because Pandoc can identify and process math expressions.\nWhen creating a new post, you have to decide whether the post format is Markdown or R Markdown, and this can be done via the ext argument of the function blogdown::new_post(), e.g.\nblogdown::new_post(\u0026#34;Post Title\u0026#34;, ext = \u0026#39;.Rmd\u0026#39;) "
-},
-{
-	"uri": "/post/",
-	"title": "Posts",
-	"tags": [],
-	"description": "",
-	"content": ""
+	"content": " This is the level 1 menu 2 front page.\n"
 },
 {
 	"uri": "/about/",
@@ -116,46 +39,11 @@
 	"title": "Introdução à Estatística e Aplicações",
 	"tags": [],
 	"description": "",
-	"content": "\rIntrodução à Estatística e Suas Aplicações\rNotas conceituais sobre estatística e suas aplicações.\n\r"
+	"content": " Introdução à Estatística e Suas Aplicações Notas conceituais sobre estatística e suas aplicações.\n "
 },
 {
 	"uri": "/categories/",
 	"title": "Categories",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "/post/2015-07-23-r-rmarkdown/",
-	"title": "Hello R Markdown",
-	"tags": ["R Markdown", "plot", "regression"],
-	"description": "",
-	"content": "\rR Markdown\rThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nYou can embed an R code chunk like this:\nsummary(cars)\r## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.:19.0 3rd Qu.: 56.00 ## Max. :25.0 Max. :120.00\rfit \u0026lt;- lm(dist ~ speed, data = cars)\rfit\r## ## Call:\r## lm(formula = dist ~ speed, data = cars)\r## ## Coefficients:\r## (Intercept) speed ## -17.579 3.932\r\rIncluding Plots\rYou can also embed plots. See Figure 1 for example:\npar(mar = c(0, 1, 0, 1))\rpie(\rc(280, 60, 20),\rc(\u0026#39;Sky\u0026#39;, \u0026#39;Sunny side of pyramid\u0026#39;, \u0026#39;Shady side of pyramid\u0026#39;),\rcol = c(\u0026#39;#0292D8\u0026#39;, \u0026#39;#F7EA39\u0026#39;, \u0026#39;#C4B632\u0026#39;),\rinit.angle = -50, border = NA\r)\r\rFigure 1: A fancy pie chart.\r\r\r"
-},
-{
-	"uri": "/tags/plot/",
-	"title": "plot",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "/categories/r/",
-	"title": "R",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "/tags/r-markdown/",
-	"title": "R Markdown",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "/tags/regression/",
-	"title": "regression",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -166,18 +54,4 @@
 	"tags": [],
 	"description": "",
 	"content": ""
-},
-{
-	"uri": "/post/2015-01-01-lorem-ipsum/",
-	"title": "Lorem Ipsum",
-	"tags": [],
-	"description": "",
-	"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n"
-},
-{
-	"uri": "/level-1-menu-1/level-2-menu-1/",
-	"title": "Level 2 Menu 1",
-	"tags": [],
-	"description": "",
-	"content": "\r\n\r\n\r\n\r\n"
 }]
