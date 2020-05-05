@@ -1,0 +1,14 @@
+---
+weight: 3
+title: "Inferência"
+date: "05/05/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Nesta etapa, busca-se descrever o comportamento de uma população por meio de amostras, usando para isto modelos probabilísticos. Por esta razão, faz-se necessário o entendimento das teorias de probabilidades, que é um ramo da matemática que busca quantificar a incerteza envolvida em fenômenos que envolvem aleatoriedade. 
+
+

@@ -1,0 +1,20 @@
+---
+weight: 4
+title: "Análise Estatística"
+author: "Rosineide da Paz"
+date: "05/05/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Após a definição do problema, em que a população e a variável de interesse são definidas, em uma análise estatística, pode-se pensar nas etapas descritas na Figura [diagrama](/introduction/page-4_files/diagrama.pdf)
+, que mostra de forma esquemática e resumida as possíveis etapas de uma análise estatística, quando já está definida qual é a população de interesse. Note que existem casos em que apenas uma análise descritiva (exploratória) dos dados é suficiente para tirar conclusões a respeito da população de interesse. No entanto, se a população é maior do que o conjunto de unidades amostrais utilizadas para a obtenção dos dados, sob determinadas condições, podemos fazer uso das teorias de probabilidades para fazer inferência sobre as características desejadas da população (os parâmetros de interesse).
+
+
+
+
+
+

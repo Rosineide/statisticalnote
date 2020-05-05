@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Dados: crítica e armazenamento</title>
+      <link>/introduction/page-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/introduction/page-1/</guid>
+      <description>Uma vez que foram observados os valores da variável de interesse (característica de interesse dos elementos da população) deve-se realizar uma crítica dos valores obtidos. Pois, muitas vezes, os dados contêm valores não realísticos, fruto de erros de digitações ou observações. Esses valores devem ser retificados ou excluídos da análise, pois poderão comprometer a confiabilidade dos resultados. Além disso, os dados devem ser estruturados de forma a facilitar a análise pretendida.</description>
+    </item>
+    
+    <item>
       <title>Regressão Linear Simples</title>
       <link>/regression/page-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -21,12 +30,39 @@
     </item>
     
     <item>
+      <title>Dados: exploração</title>
+      <link>/introduction/page-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/introduction/page-2/</guid>
+      <description>Essa é uma das etapas mais importante da análise estatística. Uma vez já feita a crítica dos valores, técnicas de uma divisão da estatística chamada {} podem ser usadas para resumir, visualizar, analisar e interpretar os dados. Caso os dados sejam provenientes de amostras, é nesta fase que se busca compreender os dados, tirando informações que podem ser úteis na escolha das ferramentas estatísticas a serem utilizadas na fase posterior, na Inferência Estatística.</description>
+    </item>
+    
+    <item>
       <title>Regressão Linear Múltipla</title>
       <link>/regression/page-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/regression/page-2/</guid>
       <description>Page 2 under level 1 menu 2.</description>
+    </item>
+    
+    <item>
+      <title>Inferência</title>
+      <link>/introduction/page-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/introduction/page-3/</guid>
+      <description>Nesta etapa, busca-se descrever o comportamento de uma população por meio de amostras, usando para isto modelos probabilísticos. Por esta razão, faz-se necessário o entendimento das teorias de probabilidades, que é um ramo da matemática que busca quantificar a incerteza envolvida em fenômenos que envolvem aleatoriedade.</description>
+    </item>
+    
+    <item>
+      <title>Análise Estatística</title>
+      <link>/introduction/page-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/introduction/page-4/</guid>
+      <description>Após a definição do problema, em que a população e a variável de interesse são definidas, em uma análise estatística, pode-se pensar nas etapas descritas na Figura diagrama, que mostra de forma esquemática e resumida as possíveis etapas de uma análise estatística, quando já está definida qual é a população de interesse. Note que existem casos em que apenas uma análise descritiva (exploratória) dos dados é suficiente para tirar conclusões a respeito da população de interesse.</description>
     </item>
     
     <item>

@@ -1,0 +1,14 @@
+---
+weight: 2
+title: "Dados: exploração"
+author: "Rosineide da Paz"
+date: "05/05/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Essa é uma das etapas mais importante da análise estatística. Uma vez já feita a crítica dos valores, técnicas de uma divisão da estatística chamada {\bf Estatística Descritiva} podem ser usadas para resumir, visualizar, analisar e interpretar os dados. Caso os dados sejam provenientes de amostras, é nesta fase que se busca compreender os dados, tirando informações que podem ser úteis na escolha das ferramentas estatísticas a serem utilizadas na fase posterior, na Inferência Estatística.
+

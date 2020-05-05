@@ -1,0 +1,12 @@
+---
+weight: 1
+title: "Dados: crítica e armazenamento"
+author: "Ming Chen"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Uma vez que foram observados os valores da variável de interesse (característica de interesse dos elementos da população) deve-se realizar uma crítica dos valores obtidos. Pois, muitas vezes, os dados contêm valores não realísticos, fruto de erros de digitações ou observações. Esses valores devem ser retificados ou excluídos da análise, pois poderão comprometer a confiabilidade dos resultados. Além disso, os dados devem ser estruturados de forma a facilitar a análise pretendida. Geralmente os dados são organizados em planilhas, mas dependendo de o quão grande seja o conjunto, ou banco, de dados, uma estruturação mais robusta pode ser requerida.

@@ -1,4 +1,6 @@
 ---
+weight: 1
+title: 1 Introdução
 header-includes:
 - \usepackage{amsmath}
 - \usepackage{amssymb}
@@ -6,24 +8,31 @@ header-includes:
 - \usepackage{bm}
 - \usepackage{bbm}
 - \usepackage{amsfonts}
-- \usepackage{mathtools} - \usepackage{tikz} - \usetikzlibrary{fit,shapes.geometric,
-  arrows} - \usetikzlibrary{trees} - \usepackage{caption} - \usepackage{hyperref}
-  - \usepackage[utf8]{inputenc} - \usepackage[portuguese]{babel} - \usepackage[T1]{fontenc}
+- \usepackage{mathtools} 
+- \usepackage{tikz} 
+- \usetikzlibrary{fit,shapes.geometric,
+  arrows} 
+  - \usetikzlibrary{trees} 
+  - \usepackage{caption} - \usepackage{hyperref}
+  - \usepackage[utf8]{inputenc} 
+  - \usepackage[portuguese]{babel} 
+  - \usepackage[T1]{fontenc}
 link-citations: yes
 output:
   html_document:
     df_print: paged
 number_sections: yes
 bibliography: reference.bib
-title: "Introdução"
-weight: 1
+
 ---
 
 \newtheorem{exemplo}{Exemplo}
 \newtheorem{assumption}{Assumption}
 \renewcommand{\thesection}{\Alph{Seções}}
 
-## Introdução  {#intro}
+
+# (PART) Visão Geral {-} 
+
 
 A estatística consiste numa metodologia científica para obtenção, organização, redução, apresentação, análise e interpretação  de dados oriundos das mais variadas áreas das ciências experimentais, cujo objetivo principal é auxiliar a tomada de decisão em situações de incerteza, veja por exemplo @bussab e @barbetta2004. Informalmente, podemos definir a ciência estatística como um conjunto de técnicas utilizadas para estudar a condição de uma população usando informações obtidas a partir de dados observados.
 
@@ -102,7 +111,7 @@ Muitas vezes, na aplicação do método científico a estatística é uma ferram
 
 
 
-### Planejamento do Estudo
+### Planejamento da Análise
 
 	
 É nessa esta que deve ser definida a __população__ de interesse, ou seja deve ser feita a __formulação do problema definido sua abrangencia__.
@@ -117,6 +126,15 @@ Muitas vezes, na aplicação do método científico a estatística é uma ferram
 Após defini-la, ainda deve ser decidido se é possível ou viável obter os dados a partir de toda a população de interesse ou de parte dela. Muitas vezes a análise é feita a partir de __amostras__ desta população.
 
 
-```{definition}
-__Amostra__ é qualquer subconjunto da população que se deseja investigar.
+```{definition, pyth, name="Amostra"}
+É qualquer subconjunto da população que se deseja investigar.
 ```
+
+
+
+
+
+
+
+## Referencias
+
