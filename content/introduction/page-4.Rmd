@@ -19,7 +19,8 @@ Após a definição do problema, em que a população e a variável de interesse
 ```{r diagrama, echo=FALSE,fig.cap = "Análise estatística  a partir de amostra ou de população."}
 library(DiagrammeR)
 grViz("digraph flowchart{
-    node [fontname = Helvetica, shape = rectangle]        
+    node [fontname = Helvetica, shape = oval]           
+      
       tab1 [label = '@@1']
       tab2 [label = '@@2']
       tab3 [label = '@@3']
@@ -32,11 +33,9 @@ grViz("digraph flowchart{
          
 
       # edge definitions with the node 
-      tab8 -> tab2
-      tab2 -> tab3 -> tab4 -> tab7 -> tab5-> tab6;
-      tab2 -> tab1 -> tab9 -> tab7 -> tab6
+       tab2 -> tab1 -> tab9 -> tab8 -> tab6;
+      tab2 -> tab3 -> tab4 -> tab7 -> tab5 -> tab6
       }
-
       [1]: 'Censo'
       [2]: 'População'
       [3]: 'Amostragem'
@@ -44,9 +43,9 @@ grViz("digraph flowchart{
       [5]: 'Inferencia Estatística (uso de probabilidades)' 
       [6]: 'Conclusões sobre a população' 
       [7]: 'Informações extraídas dos dados' 
-      [8]: 'Problema' 
+      [8]: 'Exploração dos dados' 
       [9]: 'Observações (dados)' 
-     
+       
             ")
 ```
 
