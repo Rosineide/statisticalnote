@@ -13,19 +13,19 @@
     <title>Regressão Linear Simples :: Notas de Estatística</title>
     
     
-    <link href="../../css/nucleus.css?1588722440" rel="stylesheet">
-    <link href="../../css/font-awesome.min.css?1588722440" rel="stylesheet">
-    <link href="../../css/hybrid.css?1588722440" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1588722440" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1588722440" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1588722440" rel="stylesheet">
-    <link href="../../css/theme.css?1588722440" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1588722440" rel="stylesheet">
+    <link href="../../css/nucleus.css?1588723662" rel="stylesheet">
+    <link href="../../css/font-awesome.min.css?1588723662" rel="stylesheet">
+    <link href="../../css/hybrid.css?1588723662" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1588723662" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1588723662" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1588723662" rel="stylesheet">
+    <link href="../../css/theme.css?1588723662" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1588723662" rel="stylesheet">
     
-      <link href="../../css/theme-green.css?1588722440" rel="stylesheet">
+      <link href="../../css/theme-green.css?1588723662" rel="stylesheet">
     
 
-    <script src="../../js/jquery-2.x.min.js?1588722440"></script>
+    <script src="../../js/jquery-2.x.min.js?1588723662"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -54,14 +54,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1588722440"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1588722440"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1588723662"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1588723662"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1588722440"></script>
+<script type="text/javascript" src="../../js/search.js?1588723662"></script>
 
     
   </div>
@@ -332,7 +332,24 @@
 
 
 
-<p>Page 1 under level 1 menu 2.</p>
+<p>Considere a variável Total Feed PV e a variável Total Feed SP dos dados do moinho de cimento, onde PV(variável de processo) é a real alimentação do moinho naquele exato momento e SP(set point) o valor que está programado para a alimentação. Vamos assumir que y represente a variável Total Feed PV (variável resposta) e x represente a variável Total Feed SP (variável independente). Vamos considerar os valores das variáveis observados em um período de vinte dias, considerando intervalos entre as coletas de três horas (3h). Essas dados são coletados a cada 30min, no entanto esses valores podem conter uma dependência ao longo do tempo, que pode ser amenizada considerando um intervalo maior entre as coletas.</p>
+<p>Note que parece existir uma associação entre as a variáveis, pois a medida que x aumenta, a variável y parece tender a também aumentar. Se a relação existe, em geral, é desejado saber qual é a função que pode descrever o relacionamento. Neste caso, pode-se fazer a suposição inicial de que esta função seja uma reta, ou seja, pode-se supor que um modelo de regressão linear seja apropriado. Assim, o interesse é aproximar os dados a melhor reta possível, para tentar prever o comportamento da variável x em função de y.</p>
+<p>Com a finalidade de mostrar a função da reta que melhor decreve os dados deve-se fazer a aproximação dos betas, que seguem as seguintes funções:
+<span class="math display">\[\hat{\beta_0} = \frac{n \cdot \sum x_iy_i-\sum x_i \cdot \sum y_i}{n \cdot \sum x_i^2 -( \sum x_i)^2}\]</span>
+<span class="math display">\[\hat{\beta_1} = \overline{y}-\hat{\beta_0}\cdot\overline{x}\]</span>
+Para aproximação do <span class="math inline">\(\beta_1\)</span> será necessário o valor das medias amostrais, que serão expressa pelas seguintes fórmulas:
+<span class="math display">\[\overline{x} = \frac{\sum x_i}{n}\]</span></p>
+<p><span class="math display">\[\overline{y} = \frac{\sum y_i}{n}\]</span></p>
+<p>A covariância e o coeficiente de correlção será necessária para saber se existe uma relação linear entre os dados, para poder ultilizar o método da reta de regressão. Se a covariância for negativa significa que os dados tem uma tendência decrescente, caso contrário a tendência será crescente e se a covariância for zero, não existe nenhuma tendência linear.</p>
+<p>A fórmula abaixo é utilizada para calcular a covariância amostral.</p>
+<p><span class="math display">\[s_{xy}=\frac {\sum^{n}_{i=1}x_i\cdot y_i - \frac{(\sum^{n}_{i=1}x_i)(\sum^{n}_{i=1}y_i)}{n}}{n-1}\]</span></p>
+<p>O coeficiente de correlção é expresso pela seguinte fórmula. Onde <span class="math inline">\(s_x\)</span> e <span class="math inline">\(s_y\)</span> são os desvios padrões e o valor de <span class="math inline">\(r\)</span> está entre 1 e -1, quanto mais próximo de 1 ou -1, mais linear é a relação entre as variáveis x e y. Se <span class="math inline">\(r\)</span> for positivo quando uma variável cresce a outra também irá crescer, e se for negativo quando uma cresce a outra diminui e se for 0 significa que x e y não tem correlção linear.</p>
+<p><span class="math display">\[r_{xy}=\frac{s_{xy}}{s_x\cdot s_y}\]</span></p>
+<p>Como já foi citado o modelo de regressão linear irá descrever uma relação de uma varável y com uma variável x que será expressa por uma reta, onde o erro será representado por <span class="math inline">\(\epsilon\)</span>.
+<span class="math display">\[y = \beta_0 + \beta_1 + \epsilon\]</span>
+Outra forma de aproximar os betas é através da covariância seguindo as fórmulas:
+<span class="math display">\[\hat{\beta_1} = \frac{s_{xy}}{s_x^2}\]</span>
+<span class="math display">\[\hat{\beta_0} = \frac{\sum^{n}_{i=1}y_i-\hat{\beta_1}\cdot \sum^{n}_{i=1}x_i}{n}\]</span></p>
 
 
 <footer class=" footline" >
@@ -521,20 +538,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1588722440"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1588722440"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1588722440"></script>
-    <script src="../../js/jquery.sticky.js?1588722440"></script>
-    <script src="../../js/featherlight.min.js?1588722440"></script>
-    <script src="../../js/html5shiv-printshiv.min.js?1588722440"></script>
-    <script src="../../js/highlight.pack.js?1588722440"></script>
+    <script src="../../js/clipboard.min.js?1588723662"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1588723662"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1588723662"></script>
+    <script src="../../js/jquery.sticky.js?1588723662"></script>
+    <script src="../../js/featherlight.min.js?1588723662"></script>
+    <script src="../../js/html5shiv-printshiv.min.js?1588723662"></script>
+    <script src="../../js/highlight.pack.js?1588723662"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom.71422.js?1588722440"></script>
-    <script src="../../js/learn.js?1588722440"></script>
-    <script src="../../js/hugo-learn.js?1588722440"></script>
+    <script src="../../js/modernizr.custom.71422.js?1588723662"></script>
+    <script src="../../js/learn.js?1588723662"></script>
+    <script src="../../js/hugo-learn.js?1588723662"></script>
 
-    <link href="../../mermaid/mermaid.css?1588722440" type="text/css" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1588722440"></script>
+    <link href="../../mermaid/mermaid.css?1588723662" type="text/css" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1588723662"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

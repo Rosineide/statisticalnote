@@ -76,7 +76,7 @@ attach(all.data)
 Considere a variável Total Feed PV e a variável Total Feed SP dos dados do moinho de cimento, onde PV(variável de processo) é a real alimentação do moinho naquele exato momento e SP(set point) o valor que está programado para a alimentação. Vamos assumir que y represente a variável Total Feed PV (variável resposta) e x represente a variável Total Feed SP (variável independente). Vamos considerar os valores das variáveis observados em um período de vinte dias, considerando intervalos entre as coletas de três horas (3h). Essas dados são coletados a cada 30min, no entanto esses valores podem conter uma dependência ao longo do tempo, que pode ser amenizada considerando um intervalo maior entre as coletas.
 
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 Y = as.numeric(`TOTAL FEED (ton/h) PV`)
 X = as.numeric(`TOTAL FEED (ton/h) SP`)
 
@@ -90,7 +90,7 @@ dados <- data.frame(Y,X)
 ```
 
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 lab=which(X==X)
 ggplot(dados, aes(x= X, y= Y, label=lab, colour = "red"))+
   geom_point()+guides(colour=FALSE)
