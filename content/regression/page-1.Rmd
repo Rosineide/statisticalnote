@@ -8,4 +8,117 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Page 1 under level 1 menu 2.
+```{r include=FALSE}
+library(rmarkdown)
+if(!require(ggplot2)) install.packages("ggplot2");require(ggplot2) 
+if(!require(tidyverse)) install.packages("tidyverse");require(tidyverse) 
+if(!require(readxl)) install.packages("readxl");library(readxl)
+if(!require(dplyr)) install.packages("dplyr");library(dplyr)
+```
+
+
+
+
+```{r message=TRUE, warning=TRUE, include=FALSE, paged.print=TRUE}
+data22_01 <- read_excel("Dados CMO/Mill_Data-22-01-2019.xlsx")
+
+data23_01 <- read_excel("Dados CMO/Mill_Data-23-01-2019.xlsx")
+
+data24_01 <- read_excel("Dados CMO/Mill_Data-24-01-2019.xlsx")
+
+data25_01 <- read_excel("Dados CMO/Mill_Data-25-01-2019.xlsx")
+
+data26_01 <- read_excel("Dados CMO/Mill_Data-26-01-2019.xlsx")
+
+data27_01 <- read_excel("Dados CMO/Mill_Data-27-01-2019.xlsx")
+
+data28_01 <- read_excel("Dados CMO/Mill_Data-28-01-2019.xlsx")
+
+data31_01 <- read_excel("Dados CMO/Mill_Data-31-01-2019.xlsx")
+
+data01_02 <- read_excel("Dados CMO/Mill_Data-1-02-2019.xlsx")
+
+data02_02 <- read_excel("Dados CMO/Mill_Data-02-02-2019.xlsx")
+
+data03_02 <- read_excel("Dados CMO/Mill_Data-03-02-2019.xlsx")
+
+data04_02 <- read_excel("Dados CMO/Mill_Data-04-02-2019.xlsx")
+
+data05_02 <- read_excel("Dados CMO/Mill_Data-05-02-2019.xlsx")
+
+data07_02 <- read_excel("Dados CMO/Mill_Data-07-02-2019.xlsx")
+
+data08_02 <- read_excel("Dados CMO/Mill_Data-08-02-2019.xlsx")
+
+data09_02 <- read_excel("Dados CMO/Mill_Data-09-02-2019.xlsx")
+
+data10_02 <- read_excel("Dados CMO/Mill_Data-10-02-2019.xlsx")
+
+data11_02 <- read_excel("Dados CMO/Mill_Data-11-02-2019.xlsx")
+
+data12_02 <- read_excel("Dados CMO/Mill_Data-12-02-2019.xlsx")
+
+data14_02 <- read_excel("Dados CMO/Mill_Data-14-02-2019.xlsx")
+```
+
+
+```{r eval=FALSE, include=FALSE}
+all.data <- rbind(data22_01,data23_01,data24_01,data25_01,data26_01,data27_01,
+                data28_01,data31_01,data01_02,data02_02,data03_02,data04_02,
+                data05_02,data07_02,data08_02,data09_02,data10_02,data11_02,
+               data12_02,data14_02)
+
+attach(all.data)
+
+```
+
+
+Considere a variável Total Feed PV e a variável Total Feed SP dos dados do moinho de cimento, onde PV(variável de processo) é a real alimentação do moinho naquele exato momento e SP(set point) o valor que está programado para a alimentação. Vamos assumir que y represente a variável Total Feed PV (variável resposta) e x represente a variável Total Feed SP (variável independente). Vamos considerar os valores das variáveis observados em um período de vinte dias, considerando intervalos entre as coletas de três horas (3h). Essas dados são coletados a cada 30min, no entanto esses valores podem conter uma dependência ao longo do tempo, que pode ser amenizada considerando um intervalo maior entre as coletas.
+
+
+```{r}
+Y = as.numeric(`TOTAL FEED (ton/h) PV`)
+X = as.numeric(`TOTAL FEED (ton/h) SP`)
+
+id = c(which(Y>10 & Y<110 & FALSE==is.na(Y) & X>10 & X<110 & FALSE==is.na(X)))
+
+Y = Y[id]
+X = X[id]
+
+dados <- data.frame(Y,X)
+
+```
+
+
+```{r}
+lab=which(X==X)
+ggplot(dados, aes(x= X, y= Y, label=lab, colour = "red"))+
+  geom_point()+guides(colour=FALSE)
+```
+
+
+Note que parece existir uma associação entre as a variáveis, pois a medida que x aumenta, a variável y parece tender a também aumentar. Se a relação existe, em geral, é desejado saber qual é a função que pode descrever o relacionamento. Neste caso, pode-se fazer a suposição inicial de que esta função seja uma reta, ou seja, pode-se supor que um modelo de regressão linear seja apropriado. Assim, o interesse é aproximar os dados a melhor reta possível, para tentar prever o comportamento da variável x em função de y.
+
+Com a finalidade de mostrar a função da reta que melhor decreve os dados deve-se fazer a aproximação dos betas, que seguem as seguintes funções:
+$$\hat{\beta_0} = \frac{n \cdot \sum x_iy_i-\sum x_i \cdot \sum y_i}{n \cdot \sum x_i^2 -( \sum x_i)^2}$$
+$$\hat{\beta_1} = \overline{y}-\hat{\beta_0}\cdot\overline{x}$$
+Para aproximação do $\beta_1$ será necessário o valor das medias amostrais, que serão expressa pelas seguintes fórmulas:
+  $$\overline{x} = \frac{\sum x_i}{n}$$
+ 
+ $$\overline{y} = \frac{\sum y_i}{n}$$
+
+A covariância e o coeficiente de correlção será necessária para saber se existe uma relação linear entre os dados, para poder ultilizar o método da reta de regressão. Se a covariância for negativa significa que os dados tem uma tendência decrescente, caso contrário a tendência será crescente e se a covariância for zero, não existe nenhuma tendência linear.
+
+A fórmula abaixo é utilizada para calcular a covariância amostral.
+
+$$s_{xy}=\frac {\sum^{n}_{i=1}x_i\cdot y_i - \frac{(\sum^{n}_{i=1}x_i)(\sum^{n}_{i=1}y_i)}{n}}{n-1}$$
+
+O coeficiente de correlção é expresso pela seguinte fórmula. Onde $s_x$ e $s_y$ são os desvios padrões e o valor de $r$ está entre 1 e -1, quanto mais próximo de 1 ou -1, mais linear é a relação entre as variáveis x e y. Se $r$ for positivo quando uma variável cresce a outra também irá crescer, e se for negativo quando uma cresce a outra diminui e se for 0 significa que x e y não tem correlção linear.
+
+$$r_{xy}=\frac{s_{xy}}{s_x\cdot s_y}$$
+
+Como já foi citado o modelo de regressão linear irá descrever uma relação de uma varável y com uma variável x que será expressa por uma reta, onde o erro será representado por $\epsilon$. 
+$$y = \beta_0 + \beta_1 + \epsilon$$
+Outra forma de aproximar os betas é através da covariância seguindo as fórmulas:
+ $$\hat{\beta_1} = \frac{s_{xy}}{s_x^2}$$
+$$\hat{\beta_0} = \frac{\sum^{n}_{i=1}y_i-\hat{\beta_1}\cdot \sum^{n}_{i=1}x_i}{n}$$
