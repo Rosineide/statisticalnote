@@ -10,6 +10,7 @@
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
+  \usepackage[portuguese]{babel}
   \usepackage{textcomp} % provide euro and other symbols
 \else % if luatex or xetex
   \usepackage{unicode-math}
@@ -75,6 +76,9 @@
 
 \newtheorem{exemplo}{Exemplo}
 \newtheorem{assumption}{Assumption}
+\renewcommand{\theorem}{Teorema}
+\renewcommand{\definition}{Definição}
+\renewcommand{\example}{Exemplo}
 \renewcommand{\thesection}{\Alph{Seções}}
 
 A estatística consiste numa metodologia científica para obtenção,
