@@ -1,0 +1,57 @@
+---
+weight: 6
+title: " Distribuição Conjunta"
+header-includes:
+- \usepackage{amsmath}
+- \usepackage{amssymb}
+- \usepackage{amsthm}
+- \usepackage{bm}
+- \usepackage{bbm}
+- \usepackage{amsfonts}
+- \usepackage{mathtools} 
+- \usepackage{tikz} 
+- \usetikzlibrary{fit,shapes.geometric,
+  arrows} 
+  - \usetikzlibrary{trees} 
+  - \usepackage{caption} - \usepackage{hyperref}
+  - \usepackage[utf8]{inputenc} 
+  - \usepackage[portuguese]{babel} 
+  - \usepackage[T1]{fontenc}
+output:  bookdown::html_document2
+
+---
+
+
+
+<script src="/math-code.js"></script> 
+<script async 
+src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"> 
+</script>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r include=FALSE}
+library(rmarkdown)
+if(!require(ggplot2)) install.packages("ggplot2");require(ggplot2) 
+if(!require(tidyverse)) install.packages("tidyverse");require(tidyverse) 
+if(!require(readxl)) install.packages("readxl");library(readxl)
+if(!require(dplyr)) install.packages("dplyr");library(dplyr)
+```
+
+
+
+\newcommand{\bfbeta}{\hbox{$\boldsymbol \beta$}}
+\newcommand{\bfY}{\textbf{Y}}
+\newtheorem{example}{Exemplo}
+\newtheorem{theorem}{Theorem}
+Vimos que, dada uma variável aleatório $Y$, em geral estamos interessados na frequência de ocorrência dessa variável em uma determinada população. Na prática o comportamento da variável aleatória retrata o comportamento da população em si, sendo usual tratar a variável como a própria população de interesse. Vimos também que a média pode ser uma ótima medida para resumir o comportamento da população, dependendo do grau de variabilidade da variável em torno dessa média, além de outros fatores como a presença de pontos atípicos e da assimetria da distribuição de frequência da variável. 
+
+
+Na prática, muitas vezes, existe interesse em  analisar o comportamento conjunto de duas ou mais características associadas aos elementos da população. Como por exemplo, pode-se querer analisar conjuntamente resistência e  deformidade de paredes estruturais; a produtividade e a qualidade dos produtos em um processo produtivo; peso e altura de indivíduos em uma população etc.
+
+
+
+Assim, neste capitulo, o objetivo é analisar conjuntamente duas variáveis aleatórias,  $Y$ e $X$. Ideia análoga pode ser utilizada para estender os conceitos aqui expostos para cenários onde se tem uma quantidade finita de vereáveis aleatórias que se deseja investigar conjuntamente.

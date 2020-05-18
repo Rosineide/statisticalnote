@@ -1,0 +1,30 @@
+---
+title: "Distribuição Conjunta de Duas Variáveis Aleatórias Discretas"
+weight: 1
+output: html_document
+---
+
+
+<script src="/math-code.js"></script> 
+<script async 
+src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"> 
+</script>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+
+Considerando duas  variáveis aleatórias $X$ e $Y$, o par $(X,Y)$ é chamado de variável alectória bidimensional ou vetor aleatório. Agora, o interesse é estudar o comportamento do vetor aleatório, ou seja, estudar a frequência de ocorrência de $X$ e $Y$ conjuntamente. Neste caso, cada par de números reais assumidos por $(X,Y)$ é representando por um ponto no plano cartesiano.
+
+
+O vetor aleatório $(X,Y)$  será dito ser discreto se $X$ e $Y$ forem variáveis aleatórias discretas, do mesmo modo, o vetor aleatório será dito ser contínuo se $X$ e $Y$ forem variáveis aleatórias contínuas.
+
+Se $(X,Y)$ é discreto, o conjunto de seus possíveis resultados é um conjunto contável no plano cartesiano $(x_i,y_j)$  e sua distribuição de probabilidades é dada por  $p(x_i,y_j)=P(X=x_i,Y=y_j)$, para $i=1,2, \cdots$ e $j=1,2, \cdots$,  que satisfaz:
+
+
+
+* $p(x,y) > 0$     para todo  $(x,y)$, 
+* $\sum_{i=1}^{\infty}\sum_{j=1}^{\infty} p(x_i,y_i)  =  1$. 

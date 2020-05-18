@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> Distribuição Conjunta on Notas de Estatística</title>
+    <link>/correlation/</link>
+    <description>Recent content in  Distribuição Conjunta on Notas de Estatística</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language>
+    
+	<atom:link href="/correlation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Distribuição Conjunta de Duas Variáveis Aleatórias Discretas</title>
+      <link>/correlation/correlation-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/correlation/correlation-1/</guid>
+      <description>Considerando duas variáveis aleatórias \(X\) e \(Y\), o par \((X,Y)\) é chamado de variável alectória bidimensional ou vetor aleatório. Agora, o interesse é estudar o comportamento do vetor aleatório, ou seja, estudar a frequência de ocorrência de \(X\) e \(Y\) conjuntamente. Neste caso, cada par de números reais assumidos por \((X,Y)\) é representando por um ponto no plano cartesiano.
+O vetor aleatório \((X,Y)\) será dito ser discreto se \(X\) e \(Y\) forem variáveis aleatórias discretas, do mesmo modo, o vetor aleatório será dito ser contínuo se \(X\) e \(Y\) forem variáveis aleatórias contínuas.</description>
+    </item>
+    
+    <item>
+      <title> </title>
+      <link>/correlation/page-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/correlation/page-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/correlation/page-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/correlation/page-2/</guid>
+      <description>Page 2 under level 1 menu 2.</description>
+    </item>
+    
+  </channel>
+</rss>

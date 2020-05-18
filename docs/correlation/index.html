@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="../images/favicon.png" type="image/x-icon" />
 
-    <title>1 Introdução :: Notas de Estatística</title>
+    <title> Distribuição Conjunta :: Notas de Estatística</title>
     
     
     <link href="../css/nucleus.css?1589829298" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/introduction/">
+  <body class="" data-url="/correlation/">
     <nav id="sidebar" class="">
 
 
@@ -78,8 +78,8 @@
   
     
     <li data-nav-id="/introduction/" title="1 Introdução" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="../introduction/">
@@ -186,8 +186,8 @@
   
     
     <li data-nav-id="/correlation/" title=" Distribuição Conjunta" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="../correlation/">
@@ -384,7 +384,7 @@
             
           
           
-            <a href='../'>Introdução à Estatística e Aplicações</a> > 1 Introdução
+            <a href='../'>Introdução à Estatística e Aplicações</a> >  Distribuição Conjunta
           
          
           
@@ -406,7 +406,7 @@
         
         <div id="body-inner">
           
-            <h1>1 Introdução</h1>
+            <h1> Distribuição Conjunta</h1>
           
 
         
@@ -428,79 +428,14 @@
 -
 
 
+<script src="../math-code.js"></script>
+<script async 
+src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"> 
+</script>
 
-<div id="part-visão-geral" class="section level1 unnumbered">
-<h1><span class="header-section-number">I</span> Visão Geral</h1>
-<p>A estatística consiste numa metodologia científica para obtenção, organização, redução, apresentação, análise e interpretação de dados oriundos das mais variadas áreas das ciências experimentais, cujo objetivo principal é auxiliar a tomada de decisão em situações de incerteza, veja por exemplo <span class="citation">Morettin (<a href="#ref-bussab" role="doc-biblioref">2017</a>)</span> e <span class="citation">Barbetta, Reis, and Bornia (<a href="#ref-barbetta2004" role="doc-biblioref">2004</a>)</span>. Informalmente, podemos definir a ciência estatística como um conjunto de técnicas utilizadas para estudar a condição de uma população usando informações obtidas a partir de dados observados.</p>
-<center>
-<strong>De onde vêm os dados?</strong>
-</center>
-<p>Dados são resultados de observações de algum fenômeno, podendo ser obtidos, para análise, a partir de observações espontâneas ou por meio de realização de experimentos planejados.</p>
-<ul>
-<li>Dados oriundos de observações de fenômenos quaisquer:
-<ul>
-<li>observar o desempenho natural de um novo equipamento.</li>
-</ul></li>
-</ul>
-<p>Nesse caso, o desempenho natural do equipamento é a característica que se deseja estudar.</p>
-<ul>
-<li><p>Dados oriundos de experimentos planejados:</p></li>
-<li><p>observar o desempenho de um novo equipamento, alterando de modo proposital alguma característica.</p>
-<p>Nesse caso, o interesse é estudar o desempenho do equipamento levando em consideração a variação da característica alterada.</p></li>
-</ul>
-<p>A estatística, muitas vezes, é de grande utilidade quando o método científico é utilizado para testar teoria ou hipóteses em muitas áreas do conhecimento. Esse método pode ser resumido nos seguintes passos.</p>
-<ul>
-<li><p>Um problema é formulado em que, muitas vezes, uma hipótese precisa ser testada.</p>
-<ul>
-<li>Para solucionar o problema, deve-se coletar informações que sejam relevantes, para isso pode-se formular um experimento. Em muitas áreas do conhecimento o planejamento do experimento não é simples, ou até mesmo não é possível, e uma estratégia pode ser a observação de algum fenômeno de interesse.</li>
-</ul></li>
-<li><p>Os resultados do experimento podem ser utilizados para se obter conclusões, definitivas ou não.</p></li>
-<li><p>Os passo 2 e 3 podem ser repetidos quantas vezes forem necessárias.</p></li>
-</ul>
-
-<div class="example">
-<p><span id="exm:unnamed-chunk-1" class="example"><strong>Example 1  </strong></span>Ao observar um equipamento que deveria estar operando, nota-se que este está parado.</p>
-<ul>
-<li><p>Hipotese: falta de energia elétrica.</p></li>
-<li><p>Faz-se a observação para verificar a hipótese</p></li>
-<li><p>Se não é falta de energia, outras observações e testes serão requeridos.</p></li>
-<li><p>Os passos serão executados até que se tenha uma conclusão, que pode ser definitiva ou não.</p>
-</div></li>
-</ul>
-<p>Muitas vezes, na aplicação do método científico a estatística é uma ferramenta indispensável, podendo ser requerida em todas as etapas.</p>
-
-<div class="example">
-<p><span id="exm:unnamed-chunk-2" class="example"><strong>Example 2  </strong></span> Ao observar um equipamento em operação, desconfia-se que este não está operando como deveria.</p>
-<ul>
-<li><p>Hipótese: o equipamento está desregulado, neste caso pode-se optar por realizar um processo de amostragem de produtos fabricados pela máquina, então faz-se necessário o planejamento de um experimento para coleta das amostras (área da estatística).</p></li>
-<li><p>Após o planejamento, o experimento é realizado e ferramentas da estatística podem ser aplicadas para obter alguma conclusão.</p></li>
-<li><p>Caso os resultados sejam inconclusivos, novos experimentos poderão ser realizados.</p></li>
-<li><p>Os passos podem ser executados até que se tenha uma conclusão.</p>
-</div></li>
-</ul>
-<div id="planejamento-da-análise" class="section level3">
-<h3>Planejamento da Análise</h3>
-<p>É nessa esta que deve ser definida a <strong>população</strong> de interesse, ou seja deve ser feita a <strong>formulação do problema definido sua abrangencia</strong>.</p>
-<p>Em uma análise estatística, a população pode ser pensada como o conjunto que contém todos os indivíduos, fenômenos ou resultados que se pretende investigar,sendo bem delimitado por pelo menos uma característica compartilhada por todos os seus elementos.</p>
-<p>Após defini-la, ainda deve ser decidido se é possível ou viável obter os dados a partir de toda a população de interesse ou de parte dela. Muitas vezes a análise é feita a partir de <strong>amostras</strong> desta população.</p>
-
-<div class="definition">
-<span id="def:pyth" class="definition"><strong>Definition 1  (Amostra)  </strong></span>É qualquer subconjunto da população que se deseja investigar.
-</div>
-
-</div>
-<div id="referencias" class="section level2 unnumbered">
-<h2>Referencias</h2>
-<div id="refs" class="references">
-<div id="ref-barbetta2004">
-<p>Barbetta, Pedro Alberto, Marcelo Menezes Reis, and Antonio Cezar Bornia. 2004. <em>Estatı́stica: Para Cursos de Engenharia E Informática</em>. Vol. 3. Atlas São Paulo.</p>
-</div>
-<div id="ref-bussab">
-<p>Morettin, WILTON OLIVEIRA, Pedro Alberto e BUSSAB. 2017. <em>Estatı́stica Básica</em>. Editora Saraiva.</p>
-</div>
-</div>
-</div>
-</div>
+<p>Vimos que, dada uma variável aleatório <span class="math inline">\(Y\)</span>, em geral estamos interessados na frequência de ocorrência dessa variável em uma determinada população. Na prática o comportamento da variável aleatória retrata o comportamento da população em si, sendo usual tratar a variável como a própria população de interesse. Vimos também que a média pode ser uma ótima medida para resumir o comportamento da população, dependendo do grau de variabilidade da variável em torno dessa média, além de outros fatores como a presença de pontos atípicos e da assimetria da distribuição de frequência da variável.</p>
+<p>Na prática, muitas vezes, existe interesse em analisar o comportamento conjunto de duas ou mais características associadas aos elementos da população. Como por exemplo, pode-se querer analisar conjuntamente resistência e deformidade de paredes estruturais; a produtividade e a qualidade dos produtos em um processo produtivo; peso e altura de indivíduos em uma população etc.</p>
+<p>Assim, neste capitulo, o objetivo é analisar conjuntamente duas variáveis aleatórias, <span class="math inline">\(Y\)</span> e <span class="math inline">\(X\)</span>. Ideia análoga pode ser utilizada para estender os conceitos aqui expostos para cenários onde se tem uma quantidade finita de vereáveis aleatórias que se deseja investigar conjuntamente.</p>
 
 
 <footer class=" footline" >
@@ -538,6 +473,89 @@
             
                 
                     
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -598,86 +616,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -736,10 +674,10 @@
 
 
         
-            <a class="nav nav-prev" href="../" title="Introdução à Estatística e Aplicações"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="../introduction/page-4/" title="Resumo da Análise Estatística"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="../introduction/page-1/" title="Dados: crítica e armazenamento" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="../correlation/correlation-1/" title="Distribuição Conjunta de Duas Variáveis Aleatórias Discretas" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
