@@ -36,7 +36,7 @@ O vetor aleatório \((X,Y)\) será dito ser discreto se \(X\) e \(Y\) forem vari
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/regression/page-1/</guid>
-      <description>Considere a variável Total Feed PV e a variável Total Feed SP dos dados do moinho de cimento, onde PV(variável de processo) é a real alimentação do moinho naquele exato momento e SP(set point) o valor que está programado para a alimentação. Vamos assumir que y represente a variável Total Feed PV (variável resposta) e x represente a variável Total Feed SP (variável independente). Vamos considerar os valores das variáveis observados em um período de vinte dias, considerando intervalos entre as coletas de três horas (3h).</description>
+      <description>Considere a variável Clinker PV e a variável Clinker SP dos dados do moinho de cimento referentes ao mês de agosto de 2019, onde a variável Clinker é uma mistura de vários produtos que são necessário para a produção de cimento, PV(variável de processo) é o real valor que o moinho recebe naquele exato momento e SP(set point) o valor que está programado. Vamos assumir que y represente a variável Clinker PV (variável resposta) e x represente a variável Clinker SP (variável independente).</description>
     </item>
     
     <item>

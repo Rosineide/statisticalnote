@@ -53,12 +53,13 @@ id=which(TFpv>5& TFpv<110 & CLINKERsp!=is.na(CLINKERsp) & CLINKERpv!=is.na(CLINK
 
 X=CLINKERsp[id]
 Y=CLINKERpv[id]
+
+dados <- data.frame(Y,X)
+
 ```
 
 
 ```{r echo=FALSE}
-dados <- data.frame(Y,X)
-
 lab=which(X==X)
 ggplot(dados, aes(x= X, y= Y, label=lab))+
  geom_point()+guides(colour=FALSE) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),

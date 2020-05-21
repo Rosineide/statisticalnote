@@ -5,10 +5,14 @@ output: html_document
 ---
 
 
+
 <script src="/math-code.js"></script> 
 <script async 
 src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"> 
 </script>
+
+
+
 
 
 
@@ -25,71 +29,30 @@ if(!require(dplyr)) install.packages("dplyr");library(dplyr)
 ```
 
 
+
+
 ```{r message=TRUE, warning=TRUE, include=FALSE, paged.print=TRUE}
-data22_01 <- read_excel("Dados CMO/Mill_Data-22-01-2019.xlsx")
+dados <- read.csv("dados/2019-agosto.csv")
 
-data23_01 <- read_excel("Dados CMO/Mill_Data-23-01-2019.xlsx")
-
-data24_01 <- read_excel("Dados CMO/Mill_Data-24-01-2019.xlsx")
-
-data25_01 <- read_excel("Dados CMO/Mill_Data-25-01-2019.xlsx")
-
-data26_01 <- read_excel("Dados CMO/Mill_Data-26-01-2019.xlsx")
-
-data27_01 <- read_excel("Dados CMO/Mill_Data-27-01-2019.xlsx")
-
-data28_01 <- read_excel("Dados CMO/Mill_Data-28-01-2019.xlsx")
-
-data31_01 <- read_excel("Dados CMO/Mill_Data-31-01-2019.xlsx")
-
-data01_02 <- read_excel("Dados CMO/Mill_Data-1-02-2019.xlsx")
-
-data02_02 <- read_excel("Dados CMO/Mill_Data-02-02-2019.xlsx")
-
-data03_02 <- read_excel("Dados CMO/Mill_Data-03-02-2019.xlsx")
-
-data04_02 <- read_excel("Dados CMO/Mill_Data-04-02-2019.xlsx")
-
-data05_02 <- read_excel("Dados CMO/Mill_Data-05-02-2019.xlsx")
-
-data07_02 <- read_excel("Dados CMO/Mill_Data-07-02-2019.xlsx")
-
-data08_02 <- read_excel("Dados CMO/Mill_Data-08-02-2019.xlsx")
-
-data09_02 <- read_excel("Dados CMO/Mill_Data-09-02-2019.xlsx")
-
-data10_02 <- read_excel("Dados CMO/Mill_Data-10-02-2019.xlsx")
-
-data11_02 <- read_excel("Dados CMO/Mill_Data-11-02-2019.xlsx")
-
-data12_02 <- read_excel("Dados CMO/Mill_Data-12-02-2019.xlsx")
-
-data14_02 <- read_excel("Dados CMO/Mill_Data-14-02-2019.xlsx")
+attach(dados)
 ```
 
 
-```{r include=FALSE}
-all.data <- rbind(data22_01,data23_01,data24_01,data25_01,data26_01,data27_01,
-                data28_01,data31_01,data01_02,data02_02,data03_02,data04_02,
-                data05_02,data07_02,data08_02,data09_02,data10_02,data11_02,
-               data12_02,data14_02)
-
-attach(all.data)
-
-```
-
-
-Considere a variável Total Feed PV e a variável Total Feed SP dos dados do moinho de cimento, onde PV(variável de processo) é a real alimentação do moinho naquele exato momento e SP(set point) o valor que está programado para a alimentação. Vamos assumir que y represente a variável Total Feed PV (variável resposta) e x represente a variável Total Feed SP (variável independente). Vamos considerar os valores das variáveis observados em um período de vinte dias, considerando intervalos entre as coletas de três horas (3h). Essas dados são coletados a cada 30min, no entanto esses valores podem conter uma dependência ao longo do tempo, que pode ser amenizada considerando um intervalo maior entre as coletas.
+Considere a variável Clinker PV e a variável Clinker SP dos dados do moinho de cimento referentes ao mês de agosto de 2019, onde a variável Clinker é uma mistura  de vários produtos que são necessário para a produção de cimento, PV(variável de processo) é o real valor que o moinho recebe naquele exato momento e SP(set point) o valor que está programado. Vamos assumir que y represente a variável Clinker PV (variável resposta) e x represente a variável Clinker SP (variável independente). Vamos considerar os valores das variáveis observados em um período de vinte dias, considerando intervalos entre as coletas de três horas (3h). Essas dados são coletados a cada 30min, no entanto esses valores podem conter uma dependência ao longo do tempo, que pode ser amenizada considerando um intervalo maior entre as coletas.
 
 
 ```{r include=FALSE}
-Y = as.numeric(`TOTAL FEED (ton/h) PV`)
-X = as.numeric(`TOTAL FEED (ton/h) SP`)
+TFpv=as.numeric(`total_feed_ton_h_pv`)
+TFsp=as.numeric(`total_feed_ton_h_sp`)
 
-id = c(which(Y>10 & Y<110 & FALSE==is.na(Y) & X>10 & X<110 & FALSE==is.na(X)))
+CLINKERpv=as.numeric(`clinker_ton_h_pv`)
+CLINKERsp=as.numeric(`clinker_ton_h_sp`)
 
-Y = Y[id]
-X = X[id]
+
+id=which(TFpv>5& TFpv<110 & CLINKERsp!=is.na(CLINKERsp) & CLINKERpv!=is.na(CLINKERpv) & CLINKERsp<1000 & CLINKERsp>30 & CLINKERpv<1000 & CLINKERpv>30)
+
+X=CLINKERsp[id]
+Y=CLINKERpv[id]
 
 dados <- data.frame(Y,X)
 
@@ -99,7 +62,8 @@ dados <- data.frame(Y,X)
 ```{r echo=FALSE}
 lab=which(X==X)
 ggplot(dados, aes(x= X, y= Y, label=lab))+
-  geom_point()+guides(colour=FALSE)
+ geom_point()+guides(colour=FALSE) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+panel.background = element_blank(), axis.line = element_line(colour = "black"))
 ```
 
 
@@ -123,7 +87,7 @@ O coeficiente de correlção é expresso pela seguinte fórmula. Onde $s_x$ e $s
 
 $$r_{xy}=\frac{s_{xy}}{s_x\cdot s_y}$$
 
-Como já foi citado o modelo de regressão linear irá descrever uma relação de uma varável y com uma variável x que será expressa por uma reta. O erro é representado pela letra grega $\epsilon$, pode-se fazer uma análise residual(verificar independência das variáveis) com um intuito de encontrar betas que minimizem os erros. 
+Como já foi citado o modelo de regressão linear irá descrever uma relação de uma varável y com uma variável x que será expressa por uma reta. O erro é representado pela letra grega $\epsilon$, podemos fazer uma análise residual(verificar independência das variáveis) com um intuito de encontrar betas que minimizem os erros. 
 $$y = \beta_0 + \beta_1 + \epsilon$$
 Outra forma de aproximar os betas é através da covariância seguindo as fórmulas:
  $$\hat{\beta_1} = \frac{s_{xy}}{s_x^2}$$
