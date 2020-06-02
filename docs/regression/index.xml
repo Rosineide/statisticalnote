@@ -25,7 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/regression/page-2/</guid>
-      <description>O modelo de regressão linear múltiplo é expresso pela função linear: \[y = \beta_0 + \beta_1 x_1 + ... + \beta_p x_p + \varepsilon\] em que:
+      <description>O modelo de regressão linear múltiplo é expresso pela função linear: \[y = \beta_0 + \beta_1 x_1 + ... + \beta_p x_p + \varepsilon\]em que:
 \(y\) é a variável resposta (variável dependente no modelo)
 \(x_1,...,x_p\) são as covariáveis (variáveis independentes ou explicativas), supostamente independentes entre si;
 \(\beta_0,...,\beta_p\) são os coeficientes da regressão;

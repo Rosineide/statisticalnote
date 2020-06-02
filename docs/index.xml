@@ -6,7 +6,6 @@
     <description>Recent content in Introdução à Estatística e Aplicações on Notas de Estatística</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt</language>
-    <lastBuildDate>Thu, 05 May 2016 21:48:51 -0700</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -63,7 +62,7 @@ O vetor aleatório \((X,Y)\) será dito ser discreto se \(X\) e \(Y\) forem vari
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/regression/page-2/</guid>
-      <description>O modelo de regressão linear múltiplo é expresso pela função linear: \[y = \beta_0 + \beta_1 x_1 + ... + \beta_p x_p + \varepsilon\] em que:
+      <description>O modelo de regressão linear múltiplo é expresso pela função linear: \[y = \beta_0 + \beta_1 x_1 + ... + \beta_p x_p + \varepsilon\]em que:
 \(y\) é a variável resposta (variável dependente no modelo)
 \(x_1,...,x_p\) são as covariáveis (variáveis independentes ou explicativas), supostamente independentes entre si;
 \(\beta_0,...,\beta_p\) são os coeficientes da regressão;
@@ -99,12 +98,12 @@ Agora, considere uma amostra \(y_1,...,y_n\) de \(y\) em que cada \(y_i\) está 
     </item>
     
     <item>
-      <title>About</title>
+      <title>Sobre</title>
       <link>/about/</link>
-      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
+      <description>Este é um site gerado a a partir de blogdown package.</description>
     </item>
     
   </channel>

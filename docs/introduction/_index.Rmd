@@ -1,29 +1,12 @@
 ---
 weight: 1
 title: 1 Introdução
-header-includes:
-- \usepackage{amsmath}
-- \usepackage{amssymb}
-- \usepackage{amsthm}
-- \usepackage{bm}
-- \usepackage{bbm}
-- \usepackage{amsfonts}
-- \usepackage{mathtools} 
-- \usepackage{tikz} 
-- \usetikzlibrary{fit,shapes.geometric,
-  arrows} 
-  - \usetikzlibrary{trees} 
-  - \usepackage{caption} - \usepackage{hyperref}
-  - \usepackage[utf8]{inputenc} 
-  - \usepackage[portuguese]{babel} 
-  - \usepackage[T1]{fontenc}
 link-citations: yes
 output:
   html_document:
     df_print: paged
 number_sections: yes
 bibliography: reference.bib
-
 ---
 
 \newtheorem{exemplo}{Exemplo}
@@ -31,7 +14,7 @@ bibliography: reference.bib
 \renewcommand{\thesection}{\Alph{Seções}}
 
 
-# (PART) Visão Geral {-} 
+
 
 
 A estatística consiste numa metodologia científica para obtenção, organização, redução, apresentação, análise e interpretação  de dados oriundos das mais variadas áreas das ciências experimentais, cujo objetivo principal é auxiliar a tomada de decisão em situações de incerteza, veja por exemplo @bussab e @barbetta2004. Informalmente, podemos definir a ciência estatística como um conjunto de técnicas utilizadas para estudar a condição de uma população usando informações obtidas a partir de dados observados.
@@ -42,7 +25,7 @@ A estatística consiste numa metodologia científica para obtenção, organizaç
 <center>   __De onde vêm os dados?__ </center>
 	
  
-Dados são resultados de observações de algum fenômeno, podendo ser obtidos, para análise, a partir de observações espontâneas  ou por meio de realização de  experimentos planejados. 
+Dados são resultados de observações de algum fenômeno, podendo ser obtidos a partir de observações espontâneas  ou por meio de realização de  experimentos planejados. 
  
  
  
@@ -114,11 +97,11 @@ Muitas vezes, na aplicação do método científico a estatística é uma ferram
 ### Planejamento da Análise
 
 	
-É nessa esta que deve ser definida a __população__ de interesse, ou seja deve ser feita a __formulação do problema definido sua abrangencia__.
+É nessa estapa que deve ser delimitada a __população__ de interesse, ou seja deve ser feita a __formulação do problema, definindo sua abrangência__.
 
 
 
- Em uma análise estatística, a população pode ser pensada como o conjunto que contém todos os indivíduos, fenômenos ou resultados que se pretende investigar,sendo bem delimitado por pelo menos uma característica compartilhada por todos os seus elementos. 
+ Em uma análise estatística, a população pode ser pensada como o conjunto que contém todos os indivíduos, fenômenos ou resultados que se pretende investigar, sendo bem delimitado por pelo menos uma característica compartilhada por todos os seus elementos. 
 
 
 
