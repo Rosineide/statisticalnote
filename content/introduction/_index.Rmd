@@ -114,7 +114,7 @@ Muitas vezes, na aplicação do método científico a estatística é uma ferram
 ### Planejamento da Análise
 
 	
-É nessa esta que deve ser definida a __população__ de interesse, ou seja deve ser feita a __formulação do problema definido sua abrangencia__.
+É nessa estapa que deve ser definida a __população__ de interesse, ou seja deve ser feita a __formulação do problema definido sua abrangencia__.
 
 
 
