@@ -135,32 +135,24 @@ Aqui, a recíproca também é verdadeira, ou seja, se a função de densidade, o
 
 
 
-### 5 Distribuição Condidicional 
-
-Sejam $Y_1$ e $Y_2$ variáveis aleatórias absolutamente contínuas então a distribuição condicional de $Y_1$ dado $Y_2=x$ é dada por:
-
-$$f_{Y_1|Y_2=x}(y_1,x)=\frac{f(y_{1},x)}{f(x)}, \ \ \ \mbox{ para }f(x)>0 \mbox{ e todo } y_{1},x \in \mathbb{R}.$$
-A mesma definição é válida para variáveis discretas, nesse caso a função de densidade é substituída pela função de probabilidades.
 
 
+### 5 Variabilidade Conjunta 
 
-### 6 Esperança e Variância condicional
+Assim como existe interesse em investigar a variabilidade de uma variável aleatória, muitas vezes faz se necessária a investigação da variabilidade conjunta em duas variáveis aleatórias. Essa variabilidade pode ser investigada usando a covariância. 
 
-Uma extensão do conceito de distribuição condicional, é o de esperança condicional. Assumindo que $Y_1$ e $Y_2$ são variáveis aleatórias assumindo valores em $\mathbb{R}$. Então, a esperança condicional de $Y_1$ dado  $Y_2=x$ é dada por: 
+Se as variáveis têm covariâncias positivas, os menores(ou maiores) valores da variável $Y_1$ correspon$Y_1$  corresponde aos maiores (ou menores) da variável $Y_2$, ou seja, as variáveis tendem a mostrar um comportamento semelhante .   Se a covariância é negativa,  os menores(ou maiores) valores da variável $Y_1$ corresponde aos maiores(menores) da variável $Y_2$,  ou seja, as variáveis tendem a mostrar um comportamento oposto.
 
+Lembrando que a variância de uma variável aleatória $Y$ é dada por:
 
-$$E[Y_1/Y_2=x ]= \int_{-\infty }^{\infty} y_1 f_{Y_1|Y_2=x}(y_1,x)  \partial y_1$$
-Uma importante propriedade da esperança condicional é dada a seguir.
-
-
-$$E[E(Y_1/Y_2=x)]=\int_{-\infty }^{\infty} E(Y_1/Y_2=x)f_Y(y)=E[Y_1].$$
-A demostranção dessa propriedade pode ser vista em @ross2009probabilidade.
+$$E[Y]=E[(Y-\mu)^2],$$
+em que $\mu=E[Y]$ é a esperança (ou média) de $Y$. A covariancia entre duas variáveis aleatórias $Y_1$ e $Y_2$ é dada por:
 
 
-### 7 Covariancias
+$$Cov[Y_1,Y_2]=E[(Y_1-\mu_1) (Y_2-\mu_2)],$$
+em que $\mu_1=E[Y_1]$ e $\mu_2=E[Y_2]$ são as médias de  $Y_1$ e   $Y_2$, respectivamente.
 
-
-
+## Referencias
 
 
 

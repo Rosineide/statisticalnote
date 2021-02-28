@@ -69,20 +69,16 @@ src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 <p><span class="math inline">\(f(y_{1},y_{2})=f(y_{1}) \times f(y_{2})\)</span>, para todo par <span class="math inline">\((y_{1},y_{2}) \in \mathbb{R}^2\)</span>.</p>
 <p>Aqui, a recíproca também é verdadeira, ou seja, se a função de densidade, ou de probabilidade, puder ser fatorada como o produto das funções de densidades marginais, então as variáveis <span class="math inline">\(Y_1\)</span> e <span class="math inline">\(Y_2\)</span> são independentes.</p>
 </div>
-<div id="distribuição-condidicional" class="section level3">
-<h3>5 Distribuição Condidicional</h3>
-<p>Sejam <span class="math inline">\(Y_1\)</span> e <span class="math inline">\(Y_2\)</span> variáveis aleatórias absolutamente contínuas então a distribuição condicional de <span class="math inline">\(Y_1\)</span> dado <span class="math inline">\(Y_2=x\)</span> é dada por:</p>
-<p><span class="math display">\[f_{Y_1|Y_2=x}(y_1,x)=\frac{f(y_{1},x)}{f(x)}, \ \ \ \mbox{ para }f(x)&gt;0 \mbox{ e todo } y_{1},x \in \mathbb{R}.\]</span>
-A mesma definição é válida para variáveis discretas, nesse caso a função de densidade é substituída pela função de probabilidades.</p>
+<div id="variabilidade-conjunta" class="section level3">
+<h3>5 Variabilidade Conjunta</h3>
+<p>Assim como existe interesse em investigar a variabilidade de uma variável aleatória, muitas vezes faz se necessária a investigação da variabilidade conjunta em duas variáveis aleatórias. Essa variabilidade pode ser investigada usando a covariância.</p>
+<p>Se as variáveis têm covariâncias positivas, os menores(ou maiores) valores da variável <span class="math inline">\(Y_1\)</span> correspon<span class="math inline">\(Y_1\)</span> corresponde aos maiores (ou menores) da variável <span class="math inline">\(Y_2\)</span>, ou seja, as variáveis tendem a mostrar um comportamento semelhante . Se a covariância é negativa, os menores(ou maiores) valores da variável <span class="math inline">\(Y_1\)</span> corresponde aos maiores(menores) da variável <span class="math inline">\(Y_2\)</span>, ou seja, as variáveis tendem a mostrar um comportamento oposto.</p>
+<p>Lembrando que a variância de uma variável aleatória <span class="math inline">\(Y\)</span> é dada por:</p>
+<p><span class="math display">\[E[Y]=E[(Y-\mu)^2],\]</span>
+em que <span class="math inline">\(\mu=E[Y]\)</span> é a esperança (ou média) de <span class="math inline">\(Y\)</span>. A covariancia entre duas variáveis aleatórias <span class="math inline">\(Y_1\)</span> e <span class="math inline">\(Y_2\)</span> é dada por:</p>
+<p><span class="math display">\[Cov[Y_1,Y_2]=E[(Y_1-\mu_1) (Y_2-\mu_2)],\]</span>
+em que <span class="math inline">\(\mu_1=E[Y_1]\)</span> e <span class="math inline">\(\mu_2=E[Y_2]\)</span> são as médias de <span class="math inline">\(Y_1\)</span> e <span class="math inline">\(Y_2\)</span>, respectivamente.</p>
 </div>
-<div id="esperança-e-variância-condicional" class="section level3">
-<h3>6 Esperança e Variância condicional</h3>
-<p>Uma extensão do conceito de distribuição condicional, é o de esperança condicional. Assumindo que <span class="math inline">\(Y_1\)</span> e <span class="math inline">\(Y_2\)</span> são variáveis aleatórias assumindo valores em <span class="math inline">\(\mathbb{R}\)</span>. Então, a esperança condicional de <span class="math inline">\(Y_1\)</span> dado <span class="math inline">\(Y_2=x\)</span> é dada por:</p>
-<p><span class="math display">\[E[Y_1/Y_2=x ]= \int_{-\infty }^{\infty} y_1 f_{Y_1|Y_2=x}(y_1,x)  \partial y_1\]</span>
-Uma importante propriedade da esperança condicional é dada a seguir.</p>
-<p><span class="math display">\[E[E(Y_1/Y_2=x)]=\int_{-\infty }^{\infty} E(Y_1/Y_2=x)f_Y(y)=E[Y_1].\]</span>
-A demostranção dessa propriedade pode ser vista em <span class="citation">@ross2009probabilidade</span>.</p>
-</div>
-<div id="covariancias" class="section level3">
-<h3>7 Covariancias</h3>
+<div id="referencias" class="section level2">
+<h2>Referencias</h2>
 </div>
