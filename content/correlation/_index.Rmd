@@ -149,8 +149,19 @@ $$E[Y]=E[(Y-\mu)^2],$$
 em que $\mu=E[Y]$ é a esperança (ou média) de $Y$. A covariancia entre duas variáveis aleatórias $Y_1$ e $Y_2$ é dada por:
 
 
-$$Cov[Y_1,Y_2]=E[(Y_1-\mu_1) (Y_2-\mu_2)],$$
+$$Cov(Y_1,Y_2)=E[(Y_1-\mu_1) (Y_2-\mu_2)],$$
 em que $\mu_1=E[Y_1]$ e $\mu_2=E[Y_2]$ são as médias de  $Y_1$ e   $Y_2$, respectivamente.
+
+
+
+
+
+
+
+
+
+
+
 
 ## Referencias
 
