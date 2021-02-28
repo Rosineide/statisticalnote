@@ -1,0 +1,197 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Introdução},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{bbm}
+\usepackage{amsfonts}
+\usepackage{mathtools} - \usepackage{tikz} - \usetikzlibrary{fit,shapes.geometric, arrows} - \usetikzlibrary{trees} - \usepackage{caption} - \usepackage{hyperref} - \usepackage[utf8]{inputenc} - \usepackage[portuguese]{babel} - \usepackage[T1]{fontenc}
+
+\title{Introdução}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\maketitle
+
+\newtheorem{exemplo}{Exemplo}
+\newtheorem{assumption}{Assumption}
+\renewcommand{\thesection}{\Alph{Seções}}
+A estatística consiste numa metodologia científica para obtenção,
+organização, redução, apresentação, análise e interpretação de dados
+oriundos das mais variadas áreas das ciências experimentais, cujo
+objetivo principal é auxiliar a tomada de decisão em situações de
+incerteza, veja por exemplo Morettin
+(\protect\hyperlink{ref-bussab}{2017}) e Barbetta, Reis, and Bornia
+(\protect\hyperlink{ref-barbetta2004}{2004}). Informalmente, podemos
+definir a ciência estatística como um conjunto de técnicas utilizadas
+para estudar a condição de uma população usando informações obtidas a
+partir de dados observados.
+
+\hypertarget{de-onde-vuxeam-os-dados}{%
+\paragraph{De onde vêm os dados?}\label{de-onde-vuxeam-os-dados}}
+
+Dados são resultados de observações de algum fenômeno, podendo ser
+obtidos, para análise, a partir de observações espontâneas ou por meio
+de realização de experimentos planejados.
+
+\begin{itemize}
+\tightlist
+\item
+  Dados oriundos de observações de fenômenos quaisquer:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    observar o desempenho natural de um novo equipamento.
+  \end{itemize}
+\end{itemize}
+
+Nesse caso, o desempenho natural do equipamento é a característica que
+se deseja estudar.
+
+\begin{itemize}
+\item
+  Dados oriundos de experimentos planejados:
+\item
+  observar o desempenho de um novo equipamento, alterando de modo
+  proposital alguma característica.
+
+  Nesse caso, o interesse é estudar o desempenho do equipamento levando
+  em consideração a variação da característica alterada.
+\end{itemize}
+
+A estatística, muitas vezes, é de grande utilidade quando o método
+científico é utilizado para testar teoria ou hipóteses em muitas áreas
+do conhecimento. Esse método pode ser resumido nos seguintes passos.
+
+\begin{itemize}
+\item
+  Um problema é formulado em que, muitas vezes, uma hipótese precisa ser
+  testada.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Para solucionar o problema, deve-se coletar informações que sejam
+    relevantes, para isso pode-se formular um experimento. Em muitas
+    áreas do conhecimento o planejamento do experimento não é simples,
+    ou até mesmo não é possível, e uma estratégia pode ser a observação
+    de algum fenômeno de interesse.
+  \end{itemize}
+\item
+  Os resultados do experimento podem ser utilizados para se obter
+  conclusões, definitivas ou não.
+\item
+  Os passo 2 e 3 podem ser repetidos quantas vezes forem necessárias.
+\end{itemize}
+
+\begin{verbatim}
+Ao observar um equipamento que deveria estar operando, nota-se que este está parado.
+
+- Hipotese: falta de energia elétrica.
+
+- Faz-se a observação para verificar a hipótese
+
+- Se não é falta de energia, outras observações e testes serão requeridos.
+
+- Os passos serão executados até que se tenha uma conclusão, que pode ser definitiva ou não.
+        
+\end{verbatim}
+
+Muitas vezes, na aplicação do método científico a estatística é uma
+ferramenta indispensável, podendo ser requerida em todas as etapas.
+
+\begin{verbatim}
+    Ao observar um equipamento em operação, desconfia-se que este não está operando como deveria.
+
+* Hipótese: o equipamento está desregulado, neste caso pode-se optar por realizar um processo de amostragem de produtos fabricados pela máquina, então faz-se necessário o planejamento de um experimento para coleta das amostras (área da estatística).
+
+* Após o planejamento, o experimento é realizado e ferramentas da estatística podem ser aplicadas para obter alguma conclusão.
+
+* Caso os resultados sejam inconclusivos, novos experimentos poderão ser realizados.
+
+* Os passos podem ser executados até que se tenha uma conclusão.
+\end{verbatim}
+
+\hypertarget{planejamento-do-estudo}{%
+\subsubsection{Planejamento do Estudo}\label{planejamento-do-estudo}}
+
+É nessa esta que deve ser definida a \{\bf população\} de interesse, ou
+seja deve ser feita a \textbf{Formulação do Problema}.
+
+Em uma análise estatística, a população pode ser pensada como o conjunto
+que contém todos os indivíduos, fenômenos ou resultados que se pretende
+investigar,sendo bem delimitado por pelo menos uma característica
+compartilhada por todos os seus elementos.
+
+\hypertarget{refs}{}
+\leavevmode\hypertarget{ref-barbetta2004}{}%
+Barbetta, Pedro Alberto, Marcelo Menezes Reis, and Antonio Cezar Bornia.
+2004. \emph{Estatı́stica: Para Cursos de Engenharia E Informática}. Vol.
+3. Atlas São Paulo.
+
+\leavevmode\hypertarget{ref-bussab}{}%
+Morettin, WILTON OLIVEIRA, Pedro Alberto e BUSSAB. 2017.
+\emph{Estatı́stica Básica}. Editora Saraiva.
+
+\end{document}

@@ -1,0 +1,99 @@
+---
+weight: 1
+title: 1 Introdução
+link-citations: yes
+output:
+  html_document:
+number_sections: yes
+bibliography: reference.bib
+---
+
+
+
+
+<div id="estatística-visão-geral" class="section level2">
+<h2>Estatística: visão geral</h2>
+<p>A estatística consiste numa metodologia científica para obtenção, organização, redução, apresentação, análise e interpretação de dados oriundos das mais variadas áreas das ciências experimentais, cujo objetivo principal é auxiliar a tomada de decisão em situações de incerteza, veja por exemplo <span class="citation">Morettin (<a href="#ref-bussab" role="doc-biblioref">2017</a>)</span> e <span class="citation">Barbetta, Reis, and Bornia (<a href="#ref-barbetta2004" role="doc-biblioref">2004</a>)</span>. Informalmente, podemos definir a ciência estatística como um conjunto de técnicas utilizadas para estudar a condição de uma população usando informações obtidas a partir de dados observados.</p>
+<center>
+<strong>De onde vêm os dados?</strong>
+</center>
+<p>Dados são resultados de observações de algum fenômeno, podendo ser obtidos a partir de observações espontâneas ou por meio de realização de experimentos planejados.</p>
+<ul>
+<li>Dados oriundos de observações de fenômenos quaisquer:
+<ul>
+<li>observar o desempenho natural de um novo equipamento.</li>
+</ul></li>
+</ul>
+<p>Nesse caso, o desempenho natural do equipamento é a característica que se deseja estudar.</p>
+<ul>
+<li><p>Dados oriundos de experimentos planejados:</p></li>
+<li><p>observar o desempenho de um novo equipamento, alterando de modo proposital alguma característica.</p>
+<p>Nesse caso, o interesse é estudar o desempenho do equipamento levando em consideração a variação da característica alterada.</p></li>
+</ul>
+<p>A estatística, muitas vezes, é de grande utilidade quando o método científico é utilizado para testar teoria ou hipóteses em muitas áreas do conhecimento. Esse método pode ser resumido nos seguintes passos.</p>
+<ul>
+<li><p>Um problema é formulado em que, muitas vezes, uma hipótese precisa ser testada.</p>
+<ul>
+<li>Para solucionar o problema, deve-se coletar informações que sejam relevantes, para isso pode-se formular um experimento. Em muitas áreas do conhecimento o planejamento do experimento não é simples, ou até mesmo não é possível, e uma estratégia pode ser a observação de algum fenômeno de interesse.</li>
+</ul></li>
+<li><p>Os resultados do experimento podem ser utilizados para se obter conclusões, definitivas ou não.</p></li>
+<li><p>Os passo 2 e 3 podem ser repetidos quantas vezes forem necessárias.</p></li>
+</ul>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-2" class="example"><strong>Example 1  </strong></span>Ao observar um equipamento que deveria estar operando, nota-se que este está parado.</p>
+<ul>
+<li><p>Hipotese: falta de energia elétrica.</p></li>
+<li><p>Faz-se a observação para verificar a hipótese</p></li>
+<li><p>Se não é falta de energia, outras observações e testes serão requeridos.</p></li>
+<li><p>Os passos serão executados até que se tenha uma conclusão, que pode ser definitiva ou não.</p>
+</div></li>
+</ul>
+<p>Muitas vezes, na aplicação do método científico a estatística é uma ferramenta indispensável, podendo ser requerida em todas as etapas.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-3" class="example"><strong>Example 2  </strong></span> Ao observar um equipamento em operação, desconfia-se que este não está operando como deveria.</p>
+<ul>
+<li><p>Hipótese: o equipamento está desregulado, neste caso pode-se optar por realizar um processo de amostragem de produtos fabricados pela máquina, então faz-se necessário o planejamento de um experimento para coleta das amostras (área da estatística).</p></li>
+<li><p>Após o planejamento, o experimento é realizado e ferramentas da estatística podem ser aplicadas para obter alguma conclusão.</p></li>
+<li><p>Caso os resultados sejam inconclusivos, novos experimentos poderão ser realizados.</p></li>
+<li><p>Os passos podem ser executados até que se tenha uma conclusão.</p>
+</div></li>
+</ul>
+<div id="planejamento-da-análise" class="section level3">
+<h3>Planejamento da Análise</h3>
+<p>É nessa estapa que deve ser delimitada a <strong>população</strong> de interesse, ou seja deve ser feita a <strong>formulação do problema, definindo sua abrangência</strong>.</p>
+<p>Em uma análise estatística, a população pode ser pensada como o conjunto que contém todos os indivíduos, fenômenos ou resultados que se pretende investigar, sendo bem delimitado por pelo menos uma característica compartilhada por todos os seus elementos.</p>
+<p>Após defini-la, ainda deve ser decidido se é possível ou viável obter os dados a partir de toda a população de interesse ou de parte dela. Muitas vezes a análise é feita a partir de <strong>amostras</strong> desta população.</p>
+
+<div class="definition">
+<span id="def:pyth" class="definition"><strong>Definition 1  (Amostra)  </strong></span>É qualquer subconjunto da população que se deseja investigar.
+</div>
+
+<p>Uma vez que foram observados os valores da variável de interesse (característica de interesse dos elementos da população) deve-se realizar uma crítica dos valores obtidos. Pois, muitas vezes, os dados contêm valores não realísticos, fruto de erros de digitações ou observações. Esses valores devem ser retificados ou excluídos da análise, pois poderão comprometer a confiabilidade dos resultados. Além disso, os dados devem ser estruturados de forma a facilitar a análise pretendida. Geralmente os dados são organizados em planilhas, mas dependendo de o quão grande seja o conjunto, ou banco, de dados, uma estruturação mais robusta pode ser requerida.</p>
+<p>Essa é uma das etapas mais importante da análise estatística. Uma vez já feita a crítica dos valores, técnicas de uma divisão da estatística chamada <strong>Estatística Descritiva</strong> podem ser usadas para resumir, visualizar, analisar e interpretar os dados. Caso os dados sejam provenientes de amostras, é nesta fase que se busca compreender os dados, tirando informações que podem ser úteis na escolha das ferramentas estatísticas a serem utilizadas na fase posterior, na Inferência Estatística.</p>
+<p>Nesta etapa, busca-se descrever o comportamento de uma população por meio de amostras, usando para isto modelos probabilísticos. Por esta razão, faz-se necessário o entendimento das teorias de probabilidades, que é um ramo da matemática que busca quantificar a incerteza envolvida em fenômenos que envolvem aleatoriedade.</p>
+<p>Após a definição do problema, em que a população e a variável de interesse são definidas, em uma análise estatística, pode-se pensar nas etapas descritas na Figura <a href="#fig:diagram">1</a>, que mostra de forma esquemática e resumida as possíveis etapas de uma análise estatística, quando já está definida qual é a população de interesse. Note que existem casos em que apenas uma análise descritiva (exploratória) dos dados é suficiente para tirar conclusões a respeito da população de interesse. No entanto, se a população é maior do que o conjunto de unidades amostrais utilizadas para a obtenção dos dados, sob determinadas condições, podemos fazer uso das teorias de probabilidades para fazer inferência sobre as características desejadas da população (os parâmetros de interesse).</p>
+<center>
+<div class="figure" style="text-align: center"><span id="fig:diagram"></span>
+<img src="images/Diagrama_1.png" alt="Análise estatística  a partir de amostra ou de população." width="90%" />
+<p class="caption">
+Figure 1: Análise estatística a partir de amostra ou de população.
+</p>
+</div>
+</center>
+<p>Em uma análise estatística, independentemente de que seja utilizada uma amostra ou a população inteira para obter o conjunto de observações, uma analise exploratória dos dados fazendo uso de ferramentas da  é sempre requerida. Embora essa analise inicial ocorra de forma semelhante para população ou amostra, aqui são utilizadas notações diferentes para indicar se as ferramentas estão sendo aplicadas a dados oriundos de amostras ou de populações.</p>
+<p>De um modo geral, todas as etapas requeridas para uma análise completa deve ser trabalhada com muito cuidado a fim de que sejam utilizadas as ferramentas adequadas para solução do problema que se deseja resolver, pois a adequação das ferramentas estatísticas apo problema irá conduzir a resultados mais confiáveis, que podem ser usados com mais confiança na solução do problema que se deseja resolver.</p>
+</div>
+</div>
+<div id="referencias" class="section level2 unnumbered">
+<h2>Referencias</h2>
+<div id="refs" class="references">
+<div id="ref-barbetta2004">
+<p>Barbetta, Pedro Alberto, Marcelo Menezes Reis, and Antonio Cezar Bornia. 2004. <em>Estatı́stica: Para Cursos de Engenharia E Informática</em>. Vol. 3. Atlas São Paulo.</p>
+</div>
+<div id="ref-bussab">
+<p>Morettin, WILTON OLIVEIRA, Pedro Alberto e BUSSAB. 2017. <em>Estatı́stica Básica</em>. Editora Saraiva.</p>
+</div>
+</div>
+</div>

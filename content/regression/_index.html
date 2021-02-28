@@ -1,0 +1,18 @@
+---
+weight: 7
+title: "Regressão e Correlação"
+output: html_document
+---
+
+
+
+<script src="/math-code.js"></script>
+<script async 
+src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"> 
+</script>
+
+<p>Modelos de Regressão são utilizados para descrever o relacionamento de uma variável <span class="math inline">\(y\)</span> com outra (ou outras) variável <span class="math inline">\(x\)</span>, por meio de uma relação matemática da forma
+<span class="math display">\[y = f(x;\hbox{$\boldsymbol \beta$}) + \textrm{erro}.\]</span> Quando a função <span class="math inline">\(f\)</span> é do tipo <span class="math display">\[f(x;\hbox{$\boldsymbol \beta$}) = \beta_0 + \beta_1 x,\]</span> <span class="math inline">\(\hbox{$\boldsymbol \beta$}=(\beta_0,\beta_1) \in \mathbb{R}^2\)</span>, tem-se um modelo de regressão linear simples. A variável <span class="math inline">\(x\)</span> é a variável independente do modelo, enquanto <span class="math inline">\(y\)</span> depende das variações de <span class="math inline">\(x\)</span>, e é chamada de variável resposta. Assim, o modelo de regressão é chamado de simples quando envolve uma relação causal entre duas variáveis, <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span>. O modelo de regressão é múltiplo quando envolve uma relação causal entre mais de duas variáveis. Ou seja, quando a variação da resposta <span class="math inline">\(y\)</span> pode ser explicada por mais de uma variável independente, <span class="math inline">\(x_1,...,x_p\)</span>, que são também denominadas variáveis explicativas ou covariáveis.</p>
+<p>Modelos de regressão podem ser aplicados em vários tipos de problemas.</p>
+<p>1 - Em problemas em que se deseja realizar previsões sobre o comportamento futuro de algum fenômeno, extrapolando-se para o futuro as relações de causa e efeito observados no passado.</p>
+<p>2 - Quando é desejado observar efeitos causados por uma variável <span class="math inline">\(x\)</span> sobre outra variável (sobre a variável resposta) em decorrência de alterações introduzidas em seus valores.</p>

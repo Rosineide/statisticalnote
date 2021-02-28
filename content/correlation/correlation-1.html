@@ -1,0 +1,30 @@
+---
+title: "Distribuição Condicional"
+weight: 1
+output: html_document
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<script src="/math-code.js"></script>
+<script async 
+src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"> 
+</script>
+<div id="distribuição-condidicional" class="section level3">
+<h3>2 Distribuição Condidicional</h3>
+<p>Sejam <span class="math inline">\(Y_1\)</span> e <span class="math inline">\(Y_2\)</span> variáveis aleatórias absolutamente contínuas então a distribuição condicional de <span class="math inline">\(Y_1\)</span> dado <span class="math inline">\(Y_2=x\)</span> é dada por:</p>
+<p><span class="math display">\[f_{Y_1|Y_2=x}(y_1,x)=\frac{f(y_{1},x)}{f(x)}, \ \ \ \mbox{ para }f(x)&gt;0 \mbox{ e todo } y_{1},x \in \mathbb{R}.\]</span>
+A mesma definição é válida para variáveis discretas, nesse caso a função de densidade é substituída pela função de probabilidades.</p>
+</div>
+<div id="esperança-condicional" class="section level3">
+<h3>3 Esperança condicional</h3>
+<p>Uma importante extensão do conceito de distribuição condicional é a esperança condicional. Assuma que <span class="math inline">\(Y_1\)</span> e <span class="math inline">\(Y_2\)</span> sejam variáveis aleatórias assumindo valores em <span class="math inline">\(\mathbb{R}\)</span>. Então, a esperança condicional de <span class="math inline">\(Y_1\)</span> dado <span class="math inline">\(Y_2=x\)</span> é dada por:</p>
+<p><span class="math display">\[E[Y_1/Y_2=x ]= \int_{-\infty }^{\infty} y_1 f_{Y_1|Y_2=x}(y_1,x)  \partial y_1\]</span>
+Uma importante propriedade da esperança condicional diz respeito a esperança da variável aleatória <span class="math inline">\(E(Y_1/Y_2=x)\)</span>. Essa quantidade é aleatória devido a ser uma função de <span class="math inline">\(Y_2\)</span>, assim pode-se pensar na esperança dessa variável como sendo:</p>
+<p><span class="math display">\[E[E(Y_1/Y_2=x)]=E[Y_1]=\int_{-\infty }^{\infty} E(Y_1/Y_2=x)f_Y(y).\]</span>
+Note que a esperança da esperança condinional<span class="math inline">\(E(Y_1/Y_2=x)\)</span> é a esperança de <span class="math inline">\(Y_1\)</span> em relação a sua densidade marginal. A demonstranção dessa propriedade pode ser vista em <span class="citation">@ross2009probabilidade</span> e aqui será omitida.</p>
+</div>
+<div id="referencias" class="section level2">
+<h2>Referencias</h2>
+</div>

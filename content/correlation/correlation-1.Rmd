@@ -1,0 +1,57 @@
+---
+title: "Distribuição Condicional"
+weight: 1
+output: html_document
+---
+
+
+<script src="/math-code.js"></script> 
+<script async 
+src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"> 
+</script>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+
+### 2 Distribuição Condidicional 
+
+Sejam $Y_1$ e $Y_2$ variáveis aleatórias absolutamente contínuas então a distribuição condicional de $Y_1$ dado $Y_2=x$ é dada por:
+
+$$f_{Y_1|Y_2=x}(y_1,x)=\frac{f(y_{1},x)}{f(x)}, \ \ \ \mbox{ para }f(x)>0 \mbox{ e todo } y_{1},x \in \mathbb{R}.$$
+A mesma definição é válida para variáveis discretas, nesse caso a função de densidade é substituída pela função de probabilidades.
+
+
+
+### 3 Esperança  condicional
+
+Uma importante extensão do conceito de distribuição condicional é a esperança condicional. Assuma que $Y_1$ e $Y_2$ sejam variáveis aleatórias assumindo valores em $\mathbb{R}$. Então, a esperança condicional de $Y_1$ dado  $Y_2=x$ é dada por: 
+
+
+$$E[Y_1/Y_2=x ]= \int_{-\infty }^{\infty} y_1 f_{Y_1|Y_2=x}(y_1,x)  \partial y_1$$
+Uma importante propriedade da esperança condicional diz respeito a esperança da variável aleatória $E(Y_1/Y_2=x)$. Essa quantidade é aleatória devido a ser uma função de $Y_2$, assim pode-se pensar na esperança dessa variável como sendo:
+
+
+$$E[E(Y_1/Y_2=x)]=E[Y_1]=\int_{-\infty }^{\infty} E(Y_1/Y_2=x)f_Y(y).$$
+Note que a esperança da esperança condinional$E(Y_1/Y_2=x)$ é a esperança de $Y_1$ em relação a sua densidade marginal. A demonstranção dessa propriedade pode ser vista em @ross2009probabilidade e aqui será omitida.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Referencias

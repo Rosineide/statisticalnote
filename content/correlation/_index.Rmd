@@ -1,0 +1,173 @@
+---
+weight: 2
+title: "2 Distribuição Conjunta"
+header-includes:
+- \usepackage{amsmath}
+- \usepackage{amssymb}
+- \usepackage{amsthm}
+- \usepackage{bm}
+- \usepackage{bbm}
+- \usepackage{amsfonts}
+- \usepackage{mathtools} 
+- \usepackage{tikz} 
+- \usetikzlibrary{fit,shapes.geometric,
+  arrows} 
+  - \usetikzlibrary{trees} 
+  - \usepackage{caption} - \usepackage{hyperref}
+  - \usepackage[utf8]{inputenc} 
+  - \usepackage[portuguese]{babel} 
+  - \usepackage[T1]{fontenc}
+output:  bookdown::html_document2
+
+---
+
+
+
+<script src="/math-code.js"></script> 
+<script async 
+src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"> 
+</script>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r include=FALSE}
+library(rmarkdown)
+if(!require(ggplot2)) install.packages("ggplot2");require(ggplot2) 
+if(!require(tidyverse)) install.packages("tidyverse");require(tidyverse) 
+if(!require(readxl)) install.packages("readxl");library(readxl)
+if(!require(dplyr)) install.packages("dplyr");library(dplyr)
+```
+
+
+
+\newcommand{\bfbeta}{\hbox{$\boldsymbol \beta$}}
+\newcommand{\bfY}{\textbf{Y}}
+\newtheorem{example}{Exemplo}
+\newtheorem{theorem}{Theorem}
+
+### 1 Apresentação
+
+
+Vimos que dada uma variável aleatório $Y$, as vezes estamos interessados na frequência de ocorrência dessa variável em uma determinada população. Na prática o comportamento da variável aleatória retrata o comportamento da população em si, sendo usual tratar a variável como a própria população de interesse. Vimos também que, caso a variável em questão seja quantitativa, a média pode ser uma boa medida para resumir o comportamento da população que esta representa. No entanto a qualidade da informação obtida por meio da média depende do grau da variabilidade da variável em torno dessa média, além de outros fatores como a presença de pontos atípicos e da assimetria da distribuição de frequência da variável. 
+
+
+Na prática, muitas vezes, existe interesse em  analisar o comportamento conjunto de duas ou mais características associadas aos elementos da população. Como por exemplo, pode-se querer analisar conjuntamente resistência e  deformidade de paredes estruturais; a produtividade e a qualidade dos produtos em um processo produtivo; peso e altura de indivíduos em uma população etc.
+
+
+
+Assim, neste capitulo, o objetivo é analisar conjuntamente duas variáveis aleatórias,  $Y_1$ e $Y_2$. Ideia análoga pode ser utilizada para estender os conceitos aqui expostos para cenários onde se tem uma quantidade finita de vereáveis aleatórias que se deseja investigar conjuntamente.
+
+
+
+
+
+
+
+### 2 Distribuição Conjunta de Duas Variáveis Aleatórias Discretas
+
+
+Considerando duas  variáveis aleatórias $Y_1$ e $Y_2$, o par $(Y_1,Y_2)$ é chamado de variável alectória bidimensional ou vetor aleatório. Agora, o interesse é estudar o comportamento do vetor aleatório, ou seja, estudar a frequência de ocorrência de $Y_1$ e $Y_2$ conjuntamente. Neste caso, cada par de números reais assumidos por $(Y_1,Y_2)$ é representando por um ponto no plano cartesiano.
+
+
+O vetor aleatório $(Y_1,Y_2)$   será dito ser discreto se $Y_1$ e $Y_2$forem variáveis aleatórias discretas, do mesmo modo, o vetor aleatório será dito ser contínuo se $Y_1$ e $Y_2$ forem variáveis aleatórias contínuas.
+
+Se $(Y_1,Y_2)$ é discreto, o conjunto de seus possíveis resultados é um conjunto contável no plano cartesiano $(y_{1i},y_{2j})$  e sua distribuição de probabilidades é dada por  $p(y_{1i},y_{2j})=P(Y_1=y_{1i},Y_2=y_{2j})$, para $i=1,2, \cdots$ e $j=1,2, \cdots$,  que satisfaz:
+
+
+
+* $p(y_{1i},y_{2j}) \geqslant 0$     para   $i=1,2, \cdots$ e $j=1,2, \cdots$ , 
+* $\sum_{i=1}^{\infty}\sum_{j=1}^{\infty} p(y_{1i},y_{2j})  =  1$. 
+
+As funções de probabilidades marginais de $Y_1$ e $Y_2$ são:
+
+* $p(y_{1i}=\sum_{j=1}^{\infty} p(y_{1i},y_{2j})$.
+
+
+* $p(y_{2i}=\sum_{i=1}^{\infty} p(y_{1i},y_{2j})$.
+
+
+
+
+
+
+
+
+
+
+
+### 3 Distribuição Conjunta de Duas Variáveis Aleatórias  Absolutamente Contínuas e suas MArginais
+
+Se $Y_1$ e $Y_2$ são variáreis aleatórias contínuas, a distribuição conjunta é caracterizada pela função de densidade conjunta: 
+$f(y_{1},y_{2})$, para $(y_1,y_2) \in \mathbb{R}^2$. Essa densidade satisfaz:
+
+* $f(y_{1},y_{2}) \geqslant 0$     para todo  $(y_{1},y_{2}) \in \mathbb{R}^2$, 
+* $\int_{-\infty }^{\infty} \int_{-\infty }^{\infty} f(y_{1},y_{2})   =  1$. 
+
+
+
+
+
+Nesse caso, as distribuições marginais de $Y_1$ e $Y_2$ são dadas, respectivamente, por:
+
+
+* $f_{Y_1}(y_{1})=\int_{-\infty }^{\infty}f(y_{1},y_{2}) \partial y_2$.
+
+
+* $f_{Y_2}(y_2)=\int_{-\infty }^{\infty}f(y_{1},y_{2}) \partial y_1$.
+
+
+
+
+
+
+### 4 Independência 
+
+Se $Y_1$ e $Y_2$ são independentes, a distribuição conjunta é dada pelo produto das funções de densidades, ou  de probabilidades no caso discreto, marginais:
+
+
+$f(y_{1},y_{2})=f(y_{1}) \times f(y_{2})$, para  todo par $(y_{1},y_{2}) \in \mathbb{R}^2$.
+
+
+Aqui, a recíproca também é verdadeira, ou seja, se a função de densidade, ou de probabilidade,  puder ser fatorada como o produto das funções de densidades marginais, então as variáveis  $Y_1$ e $Y_2$  são independentes.
+
+
+
+
+
+### 5 Variabilidade Conjunta 
+
+Assim como existe interesse em investigar a variabilidade de uma variável aleatória, muitas vezes faz se necessária a investigação da variabilidade conjunta em duas variáveis aleatórias. Essa variabilidade pode ser investigada usando a covariância. 
+
+Se as variáveis têm covariâncias positivas, os menores(ou maiores) valores da variável $Y_1$ correspon$Y_1$  corresponde aos maiores (ou menores) da variável $Y_2$, ou seja, as variáveis tendem a mostrar um comportamento semelhante .   Se a covariância é negativa,  os menores(ou maiores) valores da variável $Y_1$ corresponde aos maiores(menores) da variável $Y_2$,  ou seja, as variáveis tendem a mostrar um comportamento oposto.
+
+Lembrando que a variância de uma variável aleatória $Y$ é dada por:
+
+$$E[Y]=E[(Y-\mu)^2],$$
+em que $\mu=E[Y]$ é a esperança (ou média) de $Y$. A covariancia entre duas variáveis aleatórias $Y_1$ e $Y_2$ é dada por:
+
+
+$$Cov[Y_1,Y_2]=E[(Y_1-\mu_1) (Y_2-\mu_2)],$$
+em que $\mu_1=E[Y_1]$ e $\mu_2=E[Y_2]$ são as médias de  $Y_1$ e   $Y_2$, respectivamente.
+
+## Referencias
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
