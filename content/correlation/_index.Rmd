@@ -163,6 +163,11 @@ em que $\mu_1=E[Y_1]$ e $\mu_2=E[Y_2]$ são as médias de  $Y_1$ e   $Y_2$, resp
 
 
 
+
+
+
+
+
 ## Referencias
 
 
