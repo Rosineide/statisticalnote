@@ -1,6 +1,6 @@
 ---
-weight: 6
-title: " Distribuição Conjunta"
+weight: 2
+title: "2 Distribuição Conjunta"
 header-includes:
 - \usepackage{amsmath}
 - \usepackage{amssymb}
@@ -47,7 +47,11 @@ if(!require(dplyr)) install.packages("dplyr");library(dplyr)
 \newcommand{\bfY}{\textbf{Y}}
 \newtheorem{example}{Exemplo}
 \newtheorem{theorem}{Theorem}
-Vimos que, dada uma variável aleatório $Y$, em geral estamos interessados na frequência de ocorrência dessa variável em uma determinada população. Na prática o comportamento da variável aleatória retrata o comportamento da população em si, sendo usual tratar a variável como a própria população de interesse. Vimos também que a média pode ser uma ótima medida para resumir o comportamento da população, dependendo do grau de variabilidade da variável em torno dessa média, além de outros fatores como a presença de pontos atípicos e da assimetria da distribuição de frequência da variável. 
+
+### 1 Apresentação
+
+
+Vimos que dada uma variável aleatório $Y$, as vezes estamos interessados na frequência de ocorrência dessa variável em uma determinada população. Na prática o comportamento da variável aleatória retrata o comportamento da população em si, sendo usual tratar a variável como a própria população de interesse. Vimos também que, caso a variável em questão seja quantitativa, a média pode ser uma boa medida para resumir o comportamento da população que esta representa. No entanto a qualidade da informação obtida por meio da média depende do grau da variabilidade da variável em torno dessa média, além de outros fatores como a presença de pontos atípicos e da assimetria da distribuição de frequência da variável. 
 
 
 Na prática, muitas vezes, existe interesse em  analisar o comportamento conjunto de duas ou mais características associadas aos elementos da população. Como por exemplo, pode-se querer analisar conjuntamente resistência e  deformidade de paredes estruturais; a produtividade e a qualidade dos produtos em um processo produtivo; peso e altura de indivíduos em uma população etc.
@@ -62,7 +66,7 @@ Assim, neste capitulo, o objetivo é analisar conjuntamente duas variáveis alea
 
 
 
-## Distribuição Conjunta de Duas Variáveis Aleatórias Discretas
+### 2 Distribuição Conjunta de Duas Variáveis Aleatórias Discretas
 
 
 Considerando duas  variáveis aleatórias $Y_1$ e $Y_2$, o par $(Y_1,Y_2)$ é chamado de variável alectória bidimensional ou vetor aleatório. Agora, o interesse é estudar o comportamento do vetor aleatório, ou seja, estudar a frequência de ocorrência de $Y_1$ e $Y_2$ conjuntamente. Neste caso, cada par de números reais assumidos por $(Y_1,Y_2)$ é representando por um ponto no plano cartesiano.
@@ -80,6 +84,7 @@ Se $(Y_1,Y_2)$ é discreto, o conjunto de seus possíveis resultados é um conju
 
 
 
+### 3 Distribuição Conjunta de Duas Variáveis Aleatórias Contínuas
 
 
 
